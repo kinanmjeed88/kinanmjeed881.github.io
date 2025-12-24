@@ -1,0 +1,354 @@
+here{
+  "brand": "Infinix",
+  "country": "China",
+  "phones": [
+    {
+      "id": "infinix-zero-5g-2023",
+      "name": "Infinix Zero 5G 2023",
+      "release_year": 2023,
+      "category": "Mid-Range",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Glass",
+        "protection": "Glass",
+        "water_resistance": "IP53"
+      },
+      "specs": {
+        "display": {
+          "size": "6.78 inch",
+          "type": "IPS LCD",
+          "resolution": "FHD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "MediaTek Dimensity 1080",
+        "ram": "8GB",
+        "storage": "256GB",
+        "rear_camera": "50MP + 2MP + 2MP",
+        "front_camera": "16MP",
+        "battery": "5000mAh",
+        "charging": "33W wired",
+        "weight": "199g",
+        "os": "Android 12 / XOS"
+      }
+    },
+    {
+      "id": "infinix-hot-30i",
+      "name": "Infinix Hot 30i",
+      "release_year": 2023,
+      "category": "Budget",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Plastic",
+        "protection": "None",
+        "water_resistance": "None"
+      },
+      "specs": {
+        "display": {
+          "size": "6.6 inch",
+          "type": "IPS LCD",
+          "resolution": "HD+",
+          "refresh_rate": "90Hz"
+        },
+        "chipset": "Unisoc T606",
+        "ram": "4GB",
+        "storage": "128GB",
+        "rear_camera": "50MP + QVGA",
+        "front_camera": "8MP",
+        "battery": "5000mAh",
+        "charging": "18W wired",
+        "weight": "191g",
+        "os": "Android 13"
+      }
+    },
+    {
+      "id": "infinix-note-30-vip",
+      "name": "Infinix Note 30 VIP",
+      "release_year": 2023,
+      "category": "Mid-Range",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Glass",
+        "protection": "Glass",
+        "water_resistance": "IP53"
+      },
+      "specs": {
+        "display": {
+          "size": "6.67 inch",
+          "type": "AMOLED",
+          "resolution": "FHD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "MediaTek Dimensity 8050",
+        "ram": "8GB / 12GB",
+        "storage": "256GB",
+        "rear_camera": "108MP + 2MP + 2MP",
+        "front_camera": "32MP",
+        "battery": "5000mAh",
+        "charging": "68W wired + 50W wireless",
+        "weight": "205g",
+        "os": "Android 13"
+      }
+    },
+    {
+      "id": "infinix-zero-ultra",
+      "name": "Infinix Zero Ultra",
+      "release_year": 2022,
+      "category": "Mid-Range",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Glass",
+        "protection": "Glass",
+        "water_resistance": "IP53"
+      },
+      "specs": {
+        "display": {
+          "size": "6.8 inch",
+          "type": "AMOLED",
+          "resolution": "FHD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "MediaTek Dimensity 920",
+        "ram": "8GB",
+        "storage": "256GB",
+        "rear_camera": "108MP + 13MP + 2MP",
+        "front_camera": "32MP",
+        "battery": "4500mAh",
+        "charging": "180W wired",
+        "weight": "213g",
+        "os": "Android 12"
+      }
+    },
+    {
+      "id": "infinix-smart-8",
+      "name": "Infinix Smart 8",
+      "release_year": 2024,
+      "category": "Entry-Level",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Plastic",
+        "protection": "None",
+        "water_resistance": "None"
+      },
+      "specs": {
+        "display": {
+          "size": "6.6 inch",
+          "type": "IPS LCD",
+          "resolution": "HD+",
+          "refresh_rate": "90Hz"
+        },
+        "chipset": "Unisoc T606",
+        "ram": "4GB / 8GB",
+        "storage": "64GB / 128GB",
+        "rear_camera": "50MP + AI Lens",
+        "front_camera": "8MP",
+        "battery": "6000mAh",
+        "charging": "10W wired",
+        "weight": "194g",
+        "os": "Android 14"
+      }
+    },
+    {
+      "id": "infinix-note-40-pro",
+      "name": "Infinix Note 40 Pro",
+      "release_year": 2024,
+      "category": "Mid-Range",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Glass",
+        "protection": "Glass",
+        "water_resistance": "IP54"
+      },
+      "specs": {
+        "display": {
+          "size": "6.78 inch",
+          "type": "AMOLED",
+          "resolution": "FHD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "MediaTek Helio G99 Ultimate",
+        "ram": "12GB",
+        "storage": "256GB",
+        "rear_camera": "108MP + 2MP + 2MP",
+        "front_camera": "32MP",
+        "battery": "5000mAh",
+        "charging": "70W wired + 20W wireless",
+        "weight": "190g",
+        "os": "Android 14"
+      }
+    },
+    {
+      "id": "infinix-zero-30-5g",
+      "name": "Infinix Zero 30 5G",
+      "release_year": 2024,
+      "category": "Mid-Range",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Glass",
+        "protection": "Glass",
+        "water_resistance": "IP54"
+      },
+      "specs": {
+        "display": {
+          "size": "6.78 inch",
+          "type": "AMOLED Curved",
+          "resolution": "FHD+",
+          "refresh_rate": "144Hz"
+        },
+        "chipset": "MediaTek Dimensity 8020",
+        "ram": "12GB",
+        "storage": "256GB",
+        "rear_camera": "108MP + 13MP + 2MP",
+        "front_camera": "50MP",
+        "battery": "5000mAh",
+        "charging": "68W wired",
+        "weight": "185g",
+        "os": "Android 13"
+      }
+    },
+    {
+      "id": "infinix-gt-20-pro",
+      "name": "Infinix GT 20 Pro",
+      "release_year": 2024,
+      "category": "Gaming",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Glass",
+        "protection": "Glass",
+        "water_resistance": "IP54"
+      },
+      "specs": {
+        "display": {
+          "size": "6.78 inch",
+          "type": "AMOLED",
+          "resolution": "FHD+",
+          "refresh_rate": "144Hz"
+        },
+        "chipset": "MediaTek Dimensity 8200",
+        "ram": "12GB",
+        "storage": "256GB",
+        "rear_camera": "108MP + 2MP + 2MP",
+        "front_camera": "32MP",
+        "battery": "5000mAh",
+        "charging": "45W wired",
+        "weight": "195g",
+        "os": "Android 14"
+      }
+    },
+    {
+      "id": "infinix-note-50-pro",
+      "name": "Infinix Note 50 Pro",
+      "release_year": 2025,
+      "category": "Mid-Range",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Vegan Leather",
+        "protection": "Glass",
+        "water_resistance": "IP54"
+      },
+      "specs": {
+        "display": {
+          "size": "6.8 inch",
+          "type": "AMOLED",
+          "resolution": "FHD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "MediaTek Dimensity 8300",
+        "ram": "12GB",
+        "storage": "512GB",
+        "rear_camera": "200MP + 8MP + 2MP",
+        "front_camera": "32MP",
+        "battery": "5500mAh",
+        "charging": "100W wired + 30W wireless",
+        "weight": "198g",
+        "os": "Android 15"
+      }
+    },
+    {
+      "id": "infinix-zero-ultra-2025",
+      "name": "Infinix Zero Ultra 2025",
+      "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Glass",
+        "protection": "Gorilla Glass Victus",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.82 inch",
+          "type": "LTPO AMOLED",
+          "resolution": "QHD+",
+          "refresh_rate": "1–144Hz"
+        },
+        "chipset": "Snapdragon 8 Elite",
+        "ram": "16GB",
+        "storage": "1TB",
+        "rear_camera": "200MP + 50MP + 50MP",
+        "front_camera": "50MP",
+        "battery": "6000mAh",
+        "charging": "150W wired + 50W wireless",
+        "weight": "215g",
+        "os": "Android 15"
+      }
+    },
+    {
+      "id": "infinix-hot-40-pro",
+      "name": "Infinix Hot 40 Pro",
+      "release_year": 2025,
+      "category": "Budget",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Plastic",
+        "protection": "None",
+        "water_resistance": "IP52"
+      },
+      "specs": {
+        "display": {
+          "size": "6.78 inch",
+          "type": "IPS LCD",
+          "resolution": "FHD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "MediaTek Helio G99",
+        "ram": "8GB",
+        "storage": "256GB",
+        "rear_camera": "108MP + 2MP",
+        "front_camera": "32MP",
+        "battery": "6000mAh",
+        "charging": "33W wired",
+        "weight": "205g",
+        "os": "Android 15"
+      }
+    },
+    {
+      "id": "infinix-smart-9-pro",
+      "name": "Infinix Smart 9 Pro",
+      "release_year": 2025,
+      "category": "Entry-Level",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Plastic",
+        "protection": "None",
+        "water_resistance": "None"
+      },
+      "specs": {
+        "display": {
+          "size": "6.6 inch",
+          "type": "IPS LCD",
+          "resolution": "HD+",
+          "refresh_rate": "90Hz"
+        },
+        "chipset": "Unisoc T612",
+        "ram": "6GB",
+        "storage": "128GB",
+        "rear_camera": "50MP + AI Lens",
+        "front_camera": "13MP",
+        "battery": "6000mAh",
+        "charging": "18W wired",
+        "weight": "190g",
+        "os": "Android 15"
+      }
+    }
+  ]
+    }
