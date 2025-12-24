@@ -1,35 +1,121 @@
-
 {
   "brand": "Realme",
   "country": "China",
   "phones": [
     {
-      "id": "realme-gt-8-pro",
-      "name": "Realme GT 8 Pro",
-      "release_year": 2025,
+      "id": "realme-gt-2-pro",
+      "name": "Realme GT 2 Pro",
+      "release_year": 2022,
       "category": "Flagship",
       "manufacturing": {
         "frame": "Aluminum",
-        "back": "Eco-Leather / Glass",
+        "back": "Paper Tech / Glass",
+        "protection": "Gorilla Glass Victus",
+        "water_resistance": "IP54"
+      },
+      "specs": {
+        "display": {
+          "size": "6.7 inch",
+          "type": "LTPO AMOLED",
+          "resolution": "QHD+",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Snapdragon 8 Gen 1",
+        "ram": "8GB / 12GB",
+        "storage": "128GB / 256GB / 512GB",
+        "rear_camera": "50MP + 50MP + 2MP",
+        "front_camera": "32MP",
+        "battery": "5000mAh",
+        "charging": "65W wired",
+        "weight": "189g",
+        "os": "Realme UI 3.0"
+      }
+    },
+    {
+      "id": "realme-10-pro-plus",
+      "name": "Realme 10 Pro+",
+      "release_year": 2023,
+      "category": "Mid-Range",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Glass",
+        "protection": "Glass",
+        "water_resistance": "IP54"
+      },
+      "specs": {
+        "display": {
+          "size": "6.7 inch",
+          "type": "Curved AMOLED",
+          "resolution": "FHD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "MediaTek Dimensity 1080",
+        "ram": "8GB / 12GB",
+        "storage": "128GB / 256GB",
+        "rear_camera": "108MP + 8MP + 2MP",
+        "front_camera": "16MP",
+        "battery": "5000mAh",
+        "charging": "67W wired",
+        "weight": "173g",
+        "os": "Realme UI 4.0"
+      }
+    },
+    {
+      "id": "realme-gt-5-pro",
+      "name": "Realme GT 5 Pro",
+      "release_year": 2024,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Glass / Vegan Leather",
         "protection": "Gorilla Glass Victus 2",
-        "water_resistance": "IP68"
+        "water_resistance": "IP64"
       },
       "specs": {
         "display": {
           "size": "6.78 inch",
-          "type": "LTPO OLED 8T",
+          "type": "AMOLED",
           "resolution": "1.5K",
           "refresh_rate": "144Hz"
         },
-        "chipset": "Snapdragon 8 Elite",
-        "ram": "16GB / 24GB",
-        "storage": "1TB",
-        "rear_camera": "50MP (IMX906) + 50MP (Tele) + 8MP (UW)",
+        "chipset": "Snapdragon 8 Gen 3",
+        "ram": "12GB / 16GB",
+        "storage": "256GB / 512GB / 1TB",
+        "rear_camera": "50MP + 8MP + 2MP",
         "front_camera": "32MP",
-        "battery": "6500mAh",
-        "charging": "120W wired",
-        "weight": "222g",
-        "os": "Realme UI 6.0"
+        "battery": "5400mAh",
+        "charging": "100W wired",
+        "weight": "218g",
+        "os": "Realme UI 5.0"
+      }
+    },
+    {
+      "id": "realme-v300",
+      "name": "Realme V300",
+      "release_year": 2025,
+      "category": "Budget",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Plastic",
+        "protection": "None",
+        "water_resistance": "IP54"
+      },
+      "specs": {
+        "display": {
+          "size": "6.67 inch",
+          "type": "LCD",
+          "resolution": "HD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "Dimensity 6300",
+        "ram": "6GB",
+        "storage": "128GB",
+        "rear_camera": "32MP + 2MP",
+        "front_camera": "8MP",
+        "battery": "5000mAh",
+        "charging": "15W wired",
+        "weight": "192g",
+        "os": "Realme UI 5.0"
       }
     },
     {
@@ -62,31 +148,60 @@
       }
     },
     {
-      "id": "realme-v300",
-      "name": "Realme V300",
+      "id": "realme-gt-8-pro",
+      "name": "Realme GT 8 Pro",
       "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Eco-Leather / Glass",
+        "protection": "Gorilla Glass Victus 2",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.78 inch",
+          "type": "LTPO OLED 8T",
+          "resolution": "1.5K",
+          "refresh_rate": "144Hz"
+        },
+        "chipset": "Snapdragon 8 Elite",
+        "ram": "16GB / 24GB",
+        "storage": "1TB",
+        "rear_camera": "50MP (IMX906) + 50MP (Tele) + 8MP (UW)",
+        "front_camera": "32MP",
+        "battery": "6500mAh",
+        "charging": "120W wired",
+        "weight": "222g",
+        "os": "Realme UI 6.0"
+      }
+    },
+    {
+      "id": "realme-narzo-70-pro",
+      "name": "Realme Narzo 70 Pro",
+      "release_year": 2024,
       "category": "Budget",
       "manufacturing": {
         "frame": "Plastic",
         "back": "Plastic",
         "protection": "None",
-        "water_resistance": "IP54"
+        "water_resistance": "IP52"
       },
       "specs": {
         "display": {
           "size": "6.67 inch",
-          "type": "LCD",
-          "resolution": "HD+",
+          "type": "Super AMOLED",
+          "resolution": "FHD+",
           "refresh_rate": "120Hz"
         },
-        "chipset": "Dimensity 6300",
-        "ram": "6GB",
-        "storage": "128GB",
-        "rear_camera": "32MP + 2MP",
-        "front_camera": "8MP",
+        "chipset": "MediaTek Dimensity 7050",
+        "ram": "8GB",
+        "storage": "128GB / 256GB",
+        "rear_camera": "50MP + 8MP",
+        "front_camera": "16MP",
         "battery": "5000mAh",
-        "charging": "15W wired",
-        "weight": "192g",
+        "charging": "67W wired",
+        "weight": "190g",
         "os": "Realme UI 5.0"
       }
     }
