@@ -1,4 +1,6 @@
-[
+import { ArticleItem } from '../types';
+
+export const articlesData: ArticleItem[] =[
   {
     "id": 1,
     "title": "كيف تختار الهاتف المناسب لك؟ ",
