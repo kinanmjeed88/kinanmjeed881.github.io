@@ -1,0 +1,94 @@
+
+{
+  "brand": "Realme",
+  "country": "China",
+  "phones": [
+    {
+      "id": "realme-gt-8-pro",
+      "name": "Realme GT 8 Pro",
+      "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Eco-Leather / Glass",
+        "protection": "Gorilla Glass Victus 2",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.78 inch",
+          "type": "LTPO OLED 8T",
+          "resolution": "1.5K",
+          "refresh_rate": "144Hz"
+        },
+        "chipset": "Snapdragon 8 Elite",
+        "ram": "16GB / 24GB",
+        "storage": "1TB",
+        "rear_camera": "50MP (IMX906) + 50MP (Tele) + 8MP (UW)",
+        "front_camera": "32MP",
+        "battery": "6500mAh",
+        "charging": "120W wired",
+        "weight": "222g",
+        "os": "Realme UI 6.0"
+      }
+    },
+    {
+      "id": "realme-15-pro-5g",
+      "name": "Realme 15 Pro 5G",
+      "release_year": 2025,
+      "category": "Mid-Range",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Vegan Leather",
+        "protection": "Glass",
+        "water_resistance": "IP65"
+      },
+      "specs": {
+        "display": {
+          "size": "6.7 inch",
+          "type": "AMOLED Curved",
+          "resolution": "FHD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "Snapdragon 7s Gen 3",
+        "ram": "8GB / 12GB",
+        "storage": "256GB",
+        "rear_camera": "50MP (Sony LYT-600) + 8MP",
+        "front_camera": "32MP",
+        "battery": "5200mAh",
+        "charging": "80W wired",
+        "weight": "190g",
+        "os": "Realme UI 6.0"
+      }
+    },
+    {
+      "id": "realme-v300",
+      "name": "Realme V300",
+      "release_year": 2025,
+      "category": "Budget",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Plastic",
+        "protection": "None",
+        "water_resistance": "IP54"
+      },
+      "specs": {
+        "display": {
+          "size": "6.67 inch",
+          "type": "LCD",
+          "resolution": "HD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "Dimensity 6300",
+        "ram": "6GB",
+        "storage": "128GB",
+        "rear_camera": "32MP + 2MP",
+        "front_camera": "8MP",
+        "battery": "5000mAh",
+        "charging": "15W wired",
+        "weight": "192g",
+        "os": "Realme UI 5.0"
+      }
+    }
+  ]
+}

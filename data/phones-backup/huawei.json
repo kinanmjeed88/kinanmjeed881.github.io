@@ -1,0 +1,36 @@
+
+{
+  "brand": "Huawei",
+  "country": "China",
+  "phones": [
+    {
+      "id": "mate-80-pro",
+      "name": "Huawei Mate 80 Pro",
+      "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Brocade Fiber / Glass",
+        "protection": "Kunlun Glass 3",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.9 inch",
+          "type": "LTPO OLED Quad-Curved",
+          "resolution": "1.5K",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Kirin 9100 (5nm)",
+        "ram": "16GB",
+        "storage": "512GB / 1TB",
+        "rear_camera": "60MP (Main) + 50MP (Telephoto) + 48MP (Ultrawide)",
+        "front_camera": "13MP + 3D Depth",
+        "battery": "5700mAh",
+        "charging": "100W wired / 80W wireless",
+        "weight": "228g",
+        "os": "HarmonyOS Next"
+      }
+    }
+  ]
+}

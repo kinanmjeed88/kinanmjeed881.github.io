@@ -1,0 +1,36 @@
+
+{
+  "brand": "Tecno",
+  "country": "China",
+  "phones": [
+    {
+      "id": "tecno-camon-40",
+      "name": "Tecno Camon 40",
+      "release_year": 2025,
+      "category": "Mid-Range",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Vegan Leather",
+        "protection": "Glass",
+        "water_resistance": "IP54"
+      },
+      "specs": {
+        "display": {
+          "size": "6.78 inch",
+          "type": "AMOLED",
+          "resolution": "FHD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "Dimensity 8200 Ultimate",
+        "ram": "12GB",
+        "storage": "512GB",
+        "rear_camera": "50MP (OIS) + 50MP (UW) + 2MP",
+        "front_camera": "50MP Autofocus",
+        "battery": "5000mAh",
+        "charging": "70W wired",
+        "weight": "198g",
+        "os": "Android 15 / HiOS"
+      }
+    }
+  ]
+}

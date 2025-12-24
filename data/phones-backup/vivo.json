@@ -1,0 +1,94 @@
+
+{
+  "brand": "Vivo",
+  "country": "China",
+  "phones": [
+    {
+      "id": "vivo-x300-pro",
+      "name": "Vivo X300 Pro",
+      "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Titanium",
+        "back": "Glass",
+        "protection": "Schott Xensation",
+        "water_resistance": "IP69"
+      },
+      "specs": {
+        "display": {
+          "size": "6.8 inch",
+          "type": "Samsung E8 AMOLED",
+          "resolution": "2K",
+          "refresh_rate": "144Hz"
+        },
+        "chipset": "Dimensity 9500 / Snapdragon 8 Elite Pro",
+        "ram": "24GB",
+        "storage": "1TB",
+        "rear_camera": "200MP (Zeiss APO) + 50MP + 50MP",
+        "front_camera": "50MP",
+        "battery": "6500mAh",
+        "charging": "150W wired / 80W wireless",
+        "weight": "230g",
+        "os": "OriginOS 6"
+      }
+    },
+    {
+      "id": "vivo-x300",
+      "name": "Vivo X300",
+      "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Glass",
+        "protection": "Glass",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.78 inch",
+          "type": "AMOLED",
+          "resolution": "1.5K",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "Dimensity 9400",
+        "ram": "16GB",
+        "storage": "512GB",
+        "rear_camera": "50MP + 50MP + 50MP",
+        "front_camera": "32MP",
+        "battery": "6000mAh",
+        "charging": "120W wired",
+        "weight": "210g",
+        "os": "OriginOS 6"
+      }
+    },
+    {
+      "id": "vivo-v60e",
+      "name": "Vivo V60e",
+      "release_year": 2025,
+      "category": "Mid-Range",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Glass",
+        "protection": "Glass",
+        "water_resistance": "IP64"
+      },
+      "specs": {
+        "display": {
+          "size": "6.7 inch",
+          "type": "AMOLED Curved",
+          "resolution": "FHD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "Snapdragon 7 Gen 4",
+        "ram": "8GB / 12GB",
+        "storage": "256GB",
+        "rear_camera": "50MP (Sony IMX882) + 8MP",
+        "front_camera": "50MP Eye AF",
+        "battery": "5500mAh",
+        "charging": "80W wired",
+        "weight": "178g",
+        "os": "Funtouch OS 15"
+      }
+    }
+  ]
+}
