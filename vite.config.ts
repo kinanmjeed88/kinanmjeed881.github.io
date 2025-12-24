@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
   
   return {
     plugins: [react()],
-    base: '/',
+    base: '/kinanmjeed881.github.io/',
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./', import.meta.url))
