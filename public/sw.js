@@ -1,8 +1,8 @@
 
 const CACHE_NAME = 'techtouch-v1';
-// 🟢 استخدام مسارات نسبية (.) بدلاً من المطلقة (/) ليعمل الكاش داخل المجلد الفرعي
+// تمت إزالة './' من هنا لأنها تسبب خطأ "Request failed" في بعض الاستضافات أثناء التثبيت
+// سيتم التعامل مع الصفحة الرئيسية من خلال المنطق الموجود في الأسفل (Fetch Event)
 const STATIC_ASSETS = [
-  './',
   './index.html',
   './manifest.json'
 ];
@@ -33,7 +33,7 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-// Fetch Event: Network first, fall back to cache for HTML, Cache first for assets
+// Fetch Event: Network first, fall back to cache
 self.addEventListener('fetch', (event) => {
   // Only handle http/https requests
   if (!event.request.url.startsWith('http')) return;
@@ -56,14 +56,17 @@ self.addEventListener('fetch', (event) => {
         const responseToCache = networkResponse.clone();
         if (event.request.url.match(/\.(js|css|png|jpg|jpeg|svg|json)$/)) {
             caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, responseToCache);
+              cache.put(event.request, responseToCache);
             });
         }
 
         return networkResponse;
       }).catch(() => {
-        // Offline fallback for navigation requests could go here
-        // For now, simple cache return is sufficient
+        // Offline fallback for navigation requests
+        // إذا انقطع النت وحاول المستخدم فتح الموقع، نعطيه index.html المحفوظ
+        if (event.request.mode === 'navigate') {
+          return caches.match('./index.html');
+        }
       });
     })
   );
