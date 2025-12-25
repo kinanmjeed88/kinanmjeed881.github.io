@@ -11,7 +11,8 @@ import {
   Download, X, Search,
   BarChart3, PieChart,
   LayoutGrid, Copy, Facebook, Instagram, ExternalLink,
-  RotateCcw, Eye, Command, AlertTriangle, BookOpen, Share2
+  RotateCcw, Eye, Command, AlertTriangle, BookOpen, Share2,
+  Sparkles, FileSearch, Bot, ListPlus
 } from 'lucide-react';
 import { TelegramIcon } from './components/Icons'; 
 import { PhoneComparisonResult, PhoneNewsItem, StatsResult, BrandFile, LocalPhone, AITool, ArticleItem } from './types';
@@ -28,6 +29,7 @@ import vivoData from './data/phones-backup/vivo.json';
 import realmeData from './data/phones-backup/realme.json';
 import sonyData from './data/phones-backup/sony.json';
 import tecnoData from './data/phones-backup/tecno.json'; 
+import infinixData from './data/phones-backup/infinix.json';
 
 type TabType = 'home' | 'info' | 'tools';
 type ToolView = 'main' | 'ai-directory' | 'comparison' | 'phone-news' | 'stats' | 'articles';
@@ -108,7 +110,7 @@ ${MASTER_RULES}
 // --- LOCAL DB LOGIC ---
 const allBrandFiles: BrandFile[] = [
   samsungData, appleData, googleData, xiaomiData, huaweiData, 
-  oneplusData, oppoData, vivoData, realmeData, sonyData, tecnoData
+  oneplusData, oppoData, vivoData, realmeData, sonyData, tecnoData, infinixData
 ].filter(Boolean) as unknown as BrandFile[];
 
 const getAllLocalPhones = (): LocalPhone[] => {
@@ -212,6 +214,8 @@ const App: React.FC = () => {
   // Article State
   const [selectedArticle, setSelectedArticle] = useState<ArticleItem | null>(null);
   const [articleSearchQuery, setArticleSearchQuery] = useState('');
+  const [articleAiData, setArticleAiData] = useState<{type: 'summary' | 'details', text: string} | null>(null);
+  const [articleAiLoading, setArticleAiLoading] = useState(false);
 
   const [installPrompt, setInstallPrompt] = useState<any>(null);
   const [showInstallBanner, setShowInstallBanner] = useState(false);
@@ -490,8 +494,52 @@ const App: React.FC = () => {
      }
   };
 
+  // Article AI Handlers
+  const handleArticleAiAction = async (type: 'summary' | 'details') => {
+    if (!selectedArticle) return;
+    setArticleAiLoading(true);
+    setArticleAiData(null);
+    
+    // Smooth scroll slightly to indicate action
+    setTimeout(() => {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }, 100);
+
+    const systemPrompt = `
+    أنت مساعد ذكي ومحترف باللغة العربية.
+    مهمتك تحليل المقالات التقنية وتلخيصها أو التوسع في شرحها.
+    يجب أن يكون الرد بتنسيق JSON حصراً: { "content": "النتيجة هنا" }.
+    استخدم تنسيق Markdown للنص (استخدم القوائم النقطية - والعناوين ## بشكل أنيق).
+    اجعل الأسلوب رسمياً، معلوماتياً، ومرتباً جداً.
+    `;
+
+    const userPrompt = type === 'summary' 
+        ? `قم بتلخيص المقال التالي الذي يحمل عنوان: "${selectedArticle.title}". \n المحتوى: ${selectedArticle.content}. \n التلخيص يجب أن يكون على شكل نقاط رئيسية واضحة (Bullet Points) تغطي أهم ما ورد في المقال باختصار مفيد.`
+        : `قم بتقديم تحليل تفصيلي ومعلومات إضافية تقنية حول موضوع: "${selectedArticle.title}". \n المحتوى الأصلي للمقال: ${selectedArticle.content}. \n المطلوب: التوسع في شرح الأفكار الواردة، إضافة معلومات تقنية ذات صلة لم تذكر في المقال، وتنظيم الرد كنقاط تفصيلية وعناوين فرعية لشرح الموضوع بشكل موسع وشامل.`;
+
+    try {
+        const result = await callGroqAPI(userPrompt, systemPrompt);
+        if (result && result.content) {
+            setArticleAiData({ type, text: result.content });
+             // Scroll to result after loading
+            setTimeout(() => {
+                const element = document.getElementById('ai-result-section');
+                element?.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        } else {
+            setError('تعذر الحصول على رد من الذكاء الاصطناعي');
+        }
+    } catch (e) {
+        setError('حدث خطأ أثناء معالجة الطلب');
+    } finally {
+        setArticleAiLoading(false);
+    }
+  };
+
   const handleOpenArticle = (article: ArticleItem) => {
     setSelectedArticle(article);
+    setArticleAiData(null); // Reset AI data
+    setArticleAiLoading(false);
     // Add history state for cleaner back navigation
     window.history.pushState({ articleId: article.id }, '', `?article=${article.id}`);
     window.scrollTo({ top: 0, behavior: 'instant' });
@@ -499,6 +547,7 @@ const App: React.FC = () => {
 
   const handleCloseArticle = () => {
     setSelectedArticle(null);
+    setArticleAiData(null); // Reset AI data
     window.history.pushState({}, '', window.location.pathname);
   };
 
@@ -517,8 +566,6 @@ const App: React.FC = () => {
 
   const renderArticleContent = (content: string) => {
     // Robust regex to capture URLs OR [Bracketed Text]
-    // Capture group 1: URLs
-    // Capture group 2: Bracketed text
     const tokenRegex = /((?:https?:\/\/[^\s]+)|(?:\[[^\]]+\]))/g;
     
     // Find video ID for embedding
@@ -532,12 +579,10 @@ const App: React.FC = () => {
       }
     }
 
-    // Split text to process URLs and Bracketed headers
     const parts = content.split(tokenRegex);
 
     return (
         <div className="space-y-6">
-            {/* Embed Player */}
             {videoId && (
                 <div className="rounded-xl overflow-hidden shadow-lg border border-slate-700/50 aspect-video w-full">
                     <iframe 
@@ -552,12 +597,9 @@ const App: React.FC = () => {
                 </div>
             )}
             
-            {/* Text Content with "Click Here" Replacement and [Header] Highlight */}
             <div className="text-slate-200 text-sm leading-8 whitespace-pre-line text-right font-medium opacity-90">
                 {parts.map((part, i) => {
                     if (!part) return null;
-
-                    // Handle URLs
                     if (part.match(/^https?:\/\//)) {
                         return (
                             <a key={i} href={part} target="_blank" rel="noopener noreferrer" className="text-sky-400 font-bold underline hover:text-sky-300 mx-1">
@@ -565,23 +607,34 @@ const App: React.FC = () => {
                             </a>
                         );
                     }
-
-                    // Handle Bracketed Text [Header]
                     if (part.match(/^\[.*\]$/)) {
-                        const text = part.slice(1, -1); // Remove brackets
+                        const text = part.slice(1, -1); 
                         return (
                             <span key={i} className="block text-sky-400 font-black text-lg mt-6 mb-2 border-r-4 border-sky-500 pr-2 leading-tight">
                                 {text}
                             </span>
                         );
                     }
-
-                    // Regular Text
                     return <span key={i}>{part}</span>;
                 })}
             </div>
         </div>
     );
+  };
+
+  const renderAiResult = (text: string) => {
+     // Simple markdown rendering for AI output
+     const lines = text.split('\n');
+     return (
+        <div className="space-y-3 text-slate-200 text-sm leading-7">
+           {lines.map((line, idx) => {
+              if (line.startsWith('##')) return <h3 key={idx} className="text-amber-400 font-bold text-base mt-4 border-b border-amber-500/30 pb-1">{line.replace(/#/g, '').trim()}</h3>;
+              if (line.startsWith('-') || line.startsWith('•')) return <li key={idx} className="list-none flex items-start gap-2"><span className="text-amber-500 mt-1.5">•</span><span>{line.replace(/^[-•]/, '').trim()}</span></li>;
+              if (line.trim() === '') return <br key={idx}/>;
+              return <p key={idx}>{line}</p>;
+           })}
+        </div>
+     );
   };
 
   // AI Tools Filtering
@@ -1124,9 +1177,66 @@ const App: React.FC = () => {
                              <div className="flex items-center gap-2 text-[10px] text-slate-400 font-bold">
                                 <span>{selectedArticle.date || 'تاريخ غير محدد'}</span>
                              </div>
+
+                             {/* AI Action Buttons */}
+                             <div className="flex items-center gap-3 mt-4 pt-4 border-t border-slate-700/30">
+                                <button 
+                                    onClick={() => handleArticleAiAction('summary')}
+                                    disabled={articleAiLoading}
+                                    className="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-white text-xs font-bold rounded-xl shadow-lg shadow-amber-900/20 transition-all active:scale-95 disabled:opacity-50"
+                                >
+                                    {articleAiLoading && !articleAiData ? <Loader2 className="w-4 h-4 animate-spin"/> : <Sparkles className="w-4 h-4" />}
+                                    <span>تلخيص المحتوى AI</span>
+                                </button>
+                                <button 
+                                    onClick={() => handleArticleAiAction('details')}
+                                    disabled={articleAiLoading}
+                                    className="flex items-center gap-2 px-3 py-2 bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-bold rounded-xl transition-all active:scale-95 border border-slate-600 disabled:opacity-50"
+                                >
+                                    <ListPlus className="w-4 h-4" />
+                                    <span>تفاصيل أكثر AI</span>
+                                </button>
+                             </div>
                           </div>
                           
                           {renderArticleContent(selectedArticle.content)}
+
+                          {/* AI Result Section */}
+                          <div id="ai-result-section" className="scroll-mt-6">
+                            {(articleAiData || articleAiLoading) && (
+                                <div className="mt-8 pt-6 border-t border-slate-700/50 animate-slide-up">
+                                    <div className={`p-5 rounded-2xl border relative overflow-hidden transition-colors ${
+                                        articleAiData?.type === 'summary' 
+                                        ? 'bg-amber-950/20 border-amber-500/30' 
+                                        : 'bg-indigo-950/20 border-indigo-500/30'
+                                    }`}>
+                                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-50"></div>
+                                        
+                                        <div className="flex items-center gap-2 mb-4">
+                                            <div className={`p-2 rounded-lg ${
+                                                articleAiData?.type === 'summary' ? 'bg-amber-500/10 text-amber-400' : 'bg-indigo-500/10 text-indigo-400'
+                                            }`}>
+                                                <Bot className="w-5 h-5" />
+                                            </div>
+                                            <h3 className={`font-bold text-sm ${
+                                                articleAiData?.type === 'summary' ? 'text-amber-400' : 'text-indigo-400'
+                                            }`}>
+                                                {articleAiLoading ? 'جاري التحليل الذكي...' : (articleAiData?.type === 'summary' ? 'ملخص الذكاء الاصطناعي' : 'تحليل وتفاصيل إضافية')}
+                                            </h3>
+                                        </div>
+
+                                        {articleAiLoading ? (
+                                            <div className="flex flex-col items-center justify-center py-8 gap-3 text-slate-400">
+                                                <Loader2 className="w-8 h-8 animate-spin text-slate-500" />
+                                                <p className="text-xs animate-pulse">جاري معالجة النص وتوليد النقاط...</p>
+                                            </div>
+                                        ) : (
+                                            renderAiResult(articleAiData?.text || '')
+                                        )}
+                                    </div>
+                                </div>
+                            )}
+                          </div>
                        </div>
                     ) : (
                        <div className="space-y-3">
