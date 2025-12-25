@@ -11,7 +11,7 @@ if (!rootElement) {
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     // 🟢 استخدام مسار نسبي (.) ليعمل مع النطاق الفرعي في GitHub Pages
-    navigator.serviceWorker.register('./sw.js')
+    navigator.serviceWorker.register('./sw.js', { scope: './' })
       .then(registration => {
         console.log('SW registered: ', registration);
       })

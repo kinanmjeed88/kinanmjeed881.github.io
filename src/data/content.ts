@@ -4,9 +4,9 @@ import { ChannelData, SocialData } from '../types';
 // لكي تظهر صورتك:
 // 1. قم بإنشاء مجلد جديد في الملفات (بجانب index.html) وسمّه "public"
 // 2. ضع صورتك داخل مجلد public وغيّر اسمها لتصبح "profile.jpg"
-// 3. سيتعرف الموقع عليها تلقائياً
+// 3. قم بتغيير القيمة في الأسفل من null إلى 'profile.jpg'
 export const profileConfig = {
-  image: 'profile.jpg', 
+  image: null, // تم تعطيل الصورة مؤقتاً لمنع خطأ 404. لتفعيلها ضع 'profile.jpg' هنا
   initials: 'TT'
 };
 
