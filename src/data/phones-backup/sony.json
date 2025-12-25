@@ -1,0 +1,64 @@
+{
+  "brand": "Honor",
+  "country": "China",
+  "phones": [
+    {
+      "id": "honor-magic-7-pro",
+      "name": "Honor Magic 7 Pro",
+      "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Glass",
+        "protection": "Rhino Glass",
+        "water_resistance": "IP68 / IP69"
+      },
+      "specs": {
+        "display": {
+          "size": "6.8 inch",
+          "type": "LTPO OLED Quad-Curved",
+          "resolution": "1.5K",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Snapdragon 8 Elite",
+        "ram": "16GB",
+        "storage": "512GB / 1TB",
+        "rear_camera": "50MP (Main) + 200MP (Periscope) + 50MP (UW)",
+        "front_camera": "50MP + 3D ToF",
+        "battery": "5850mAh",
+        "charging": "100W wired / 80W wireless",
+        "weight": "229g",
+        "os": "MagicOS 9.0"
+      }
+    },
+    {
+      "id": "honor-500",
+      "name": "Honor 500",
+      "release_year": 2025,
+      "category": "Mid-Range",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Glass",
+        "protection": "Glass",
+        "water_resistance": "None"
+      },
+      "specs": {
+        "display": {
+          "size": "6.78 inch",
+          "type": "AMOLED",
+          "resolution": "1.5K",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "Snapdragon 7 Gen 3",
+        "ram": "12GB",
+        "storage": "256GB",
+        "rear_camera": "50MP + 50MP",
+        "front_camera": "50MP",
+        "battery": "5200mAh",
+        "charging": "100W wired",
+        "weight": "195g",
+        "os": "MagicOS 9.0"
+      }
+    }
+  ]
+}

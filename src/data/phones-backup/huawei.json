@@ -1,0 +1,209 @@
+{
+  "brand": "Huawei",
+  "country": "China",
+  "phones": [
+    {
+      "id": "p50-pro",
+      "name": "Huawei P50 Pro",
+      "release_year": 2022,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Glass",
+        "protection": "Glass",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.6 inch",
+          "type": "OLED",
+          "resolution": "1.5K",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "Kirin 9000 / Snapdragon 888 4G",
+        "ram": "8GB / 12GB",
+        "storage": "256GB / 512GB",
+        "rear_camera": "50MP + 40MP + 13MP + 64MP",
+        "front_camera": "13MP",
+        "battery": "4360mAh",
+        "charging": "66W wired + 50W wireless",
+        "weight": "195g",
+        "os": "HarmonyOS 2"
+      }
+    },
+    {
+      "id": "mate-50-pro",
+      "name": "Huawei Mate 50 Pro",
+      "release_year": 2022,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Glass / Vegan Leather",
+        "protection": "Kunlun Glass",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.74 inch",
+          "type": "OLED",
+          "resolution": "1.5K",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "Snapdragon 8+ Gen 1 4G",
+        "ram": "8GB",
+        "storage": "256GB / 512GB",
+        "rear_camera": "50MP + 13MP + 64MP",
+        "front_camera": "13MP + 3D ToF",
+        "battery": "4700mAh",
+        "charging": "66W wired + 50W wireless",
+        "weight": "209g",
+        "os": "HarmonyOS 3"
+      }
+    },
+    {
+      "id": "p60-pro",
+      "name": "Huawei P60 Pro",
+      "release_year": 2023,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Glass",
+        "protection": "Kunlun Glass 2",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.67 inch",
+          "type": "LTPO OLED",
+          "resolution": "1.5K",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Snapdragon 8+ Gen 1 4G",
+        "ram": "8GB / 12GB",
+        "storage": "256GB / 512GB",
+        "rear_camera": "48MP + 13MP + 48MP",
+        "front_camera": "13MP",
+        "battery": "4815mAh",
+        "charging": "88W wired + 50W wireless",
+        "weight": "200g",
+        "os": "HarmonyOS 3.1"
+      }
+    },
+    {
+      "id": "mate-60-pro",
+      "name": "Huawei Mate 60 Pro",
+      "release_year": 2023,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Glass / Vegan Leather",
+        "protection": "Kunlun Glass 2",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.82 inch",
+          "type": "LTPO OLED",
+          "resolution": "1.5K",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Kirin 9000S",
+        "ram": "12GB",
+        "storage": "256GB / 512GB / 1TB",
+        "rear_camera": "50MP + 48MP + 12MP",
+        "front_camera": "13MP + 3D ToF",
+        "battery": "5000mAh",
+        "charging": "88W wired + 50W wireless",
+        "weight": "225g",
+        "os": "HarmonyOS 4"
+      }
+    },
+    {
+      "id": "p70-ultra",
+      "name": "Huawei P70 Ultra",
+      "release_year": 2024,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Titanium",
+        "back": "Ceramic",
+        "protection": "Kunlun Glass 2.5",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.8 inch",
+          "type": "LTPO OLED",
+          "resolution": "1.5K",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Kirin 9010",
+        "ram": "16GB",
+        "storage": "512GB / 1TB",
+        "rear_camera": "50MP + 50MP + 50MP",
+        "front_camera": "13MP",
+        "battery": "5300mAh",
+        "charging": "100W wired + 80W wireless",
+        "weight": "229g",
+        "os": "HarmonyOS 4.2"
+      }
+    },
+    {
+      "id": "mate-80-pro",
+      "name": "Huawei Mate 80 Pro",
+      "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Brocade Fiber / Glass",
+        "protection": "Kunlun Glass 3",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.9 inch",
+          "type": "LTPO OLED Quad-Curved",
+          "resolution": "1.5K",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Kirin 9100 (5nm)",
+        "ram": "16GB",
+        "storage": "512GB / 1TB",
+        "rear_camera": "60MP (Main) + 50MP (Telephoto) + 48MP (Ultrawide)",
+        "front_camera": "13MP + 3D Depth",
+        "battery": "5700mAh",
+        "charging": "100W wired / 80W wireless",
+        "weight": "228g",
+        "os": "HarmonyOS Next"
+      }
+    },
+    {
+      "id": "nova-13-pro",
+      "name": "Huawei Nova 13 Pro",
+      "release_year": 2024,
+      "category": "Mid-Range",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Glass",
+        "protection": "Glass",
+        "water_resistance": "IP54"
+      },
+      "specs": {
+        "display": {
+          "size": "6.78 inch",
+          "type": "OLED",
+          "resolution": "FHD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "Snapdragon 7 Gen 3",
+        "ram": "12GB",
+        "storage": "256GB / 512GB",
+        "rear_camera": "50MP + 8MP + 2MP",
+        "front_camera": "60MP",
+        "battery": "4800mAh",
+        "charging": "66W wired",
+        "weight": "186g",
+        "os": "HarmonyOS 4"
+      }
+    }
+  ]
+}

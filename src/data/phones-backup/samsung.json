@@ -1,0 +1,267 @@
+{
+  "brand": "Samsung",
+  "country": "South Korea",
+  "phones": [
+    {
+      "id": "galaxy-s22-ultra",
+      "name": "Samsung Galaxy S22 Ultra",
+      "release_year": 2022,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Armor Aluminum",
+        "back": "Glass",
+        "protection": "Gorilla Glass Victus+",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.8 inch",
+          "type": "Dynamic AMOLED 2X",
+          "resolution": "QHD+",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Exynos 2200 / Snapdragon 8 Gen 1",
+        "ram": "8GB / 12GB",
+        "storage": "128GB / 256GB / 512GB / 1TB",
+        "rear_camera": "108MP + 10MP + 10MP + 12MP",
+        "front_camera": "40MP",
+        "battery": "5000mAh",
+        "charging": "45W wired",
+        "weight": "228g",
+        "os": "Android 12"
+      }
+    },
+    {
+      "id": "galaxy-s23-ultra",
+      "name": "Samsung Galaxy S23 Ultra",
+      "release_year": 2023,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Armor Aluminum",
+        "back": "Glass",
+        "protection": "Gorilla Glass Victus 2",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.8 inch",
+          "type": "Dynamic AMOLED 2X",
+          "resolution": "QHD+",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Snapdragon 8 Gen 2 for Galaxy",
+        "ram": "8GB / 12GB",
+        "storage": "256GB / 512GB / 1TB",
+        "rear_camera": "200MP + 10MP + 10MP + 12MP",
+        "front_camera": "12MP",
+        "battery": "5000mAh",
+        "charging": "45W wired",
+        "weight": "234g",
+        "os": "Android 13"
+      }
+    },
+    {
+      "id": "galaxy-s24-ultra",
+      "name": "Samsung Galaxy S24 Ultra",
+      "release_year": 2024,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Titanium",
+        "back": "Glass (Gorilla Armor)",
+        "protection": "Corning Gorilla Armor",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.8 inch",
+          "type": "Dynamic AMOLED 2X",
+          "resolution": "QHD+",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Snapdragon 8 Gen 3 for Galaxy",
+        "ram": "12GB",
+        "storage": "256GB / 512GB / 1TB",
+        "rear_camera": "200MP + 50MP + 12MP + 10MP",
+        "front_camera": "12MP",
+        "battery": "5000mAh",
+        "charging": "45W wired",
+        "weight": "232g",
+        "os": "Android"
+      }
+    },
+    {
+      "id": "galaxy-s24",
+      "name": "Samsung Galaxy S24",
+      "release_year": 2024,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Aluminum Armor",
+        "back": "Glass (Gorilla Glass Victus 2)",
+        "protection": "Gorilla Glass Victus 2",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.2 inch",
+          "type": "Dynamic AMOLED 2X",
+          "resolution": "FHD+",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Exynos 2400 / Snapdragon 8 Gen 3",
+        "ram": "8GB",
+        "storage": "128GB / 256GB",
+        "rear_camera": "50MP + 12MP + 10MP",
+        "front_camera": "12MP",
+        "battery": "4000mAh",
+        "charging": "25W wired",
+        "weight": "167g",
+        "os": "Android"
+      }
+    },
+    {
+      "id": "galaxy-s25-ultra",
+      "name": "Samsung Galaxy S25 Ultra",
+      "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Titanium Grade 2",
+        "back": "Gorilla Armor 2",
+        "protection": "Gorilla Armor 2",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.9 inch",
+          "type": "Dynamic AMOLED 2X",
+          "resolution": "QHD+",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Snapdragon 8 Elite for Galaxy",
+        "ram": "16GB",
+        "storage": "256GB / 512GB / 1TB",
+        "rear_camera": "200MP (Main) + 50MP (UW) + 50MP (3x) + 50MP (5x)",
+        "front_camera": "12MP",
+        "battery": "5000mAh",
+        "charging": "45W wired",
+        "weight": "219g",
+        "os": "Android 15 (One UI 7)"
+      }
+    },
+    {
+      "id": "galaxy-s25-plus",
+      "name": "Samsung Galaxy S25+",
+      "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Armor Aluminum",
+        "back": "Gorilla Glass Victus 3",
+        "protection": "Gorilla Glass Victus 3",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.7 inch",
+          "type": "Dynamic AMOLED 2X",
+          "resolution": "QHD+",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Exynos 2500 / Snapdragon 8 Elite",
+        "ram": "12GB",
+        "storage": "256GB / 512GB",
+        "rear_camera": "50MP + 12MP + 10MP",
+        "front_camera": "12MP",
+        "battery": "4900mAh",
+        "charging": "45W wired",
+        "weight": "190g",
+        "os": "Android 15"
+      }
+    },
+    {
+      "id": "galaxy-s25",
+      "name": "Samsung Galaxy S25",
+      "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Armor Aluminum",
+        "back": "Gorilla Glass Victus 3",
+        "protection": "Gorilla Glass Victus 3",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.36 inch",
+          "type": "Dynamic AMOLED 2X",
+          "resolution": "FHD+",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Exynos 2500 / Snapdragon 8 Elite",
+        "ram": "12GB",
+        "storage": "128GB / 256GB",
+        "rear_camera": "50MP + 12MP + 10MP",
+        "front_camera": "12MP",
+        "battery": "4000mAh",
+        "charging": "25W wired",
+        "weight": "160g",
+        "os": "Android 15"
+      }
+    },
+    {
+      "id": "galaxy-z-fold6",
+      "name": "Samsung Galaxy Z Fold6",
+      "release_year": 2024,
+      "category": "Foldable",
+      "manufacturing": {
+        "frame": "Armor Aluminum",
+        "back": "Glass",
+        "protection": "Gorilla Glass Victus 2",
+        "water_resistance": "IPX8"
+      },
+      "specs": {
+        "display": {
+          "size": "7.6 inch (Main) / 6.2 inch (Cover)",
+          "type": "Dynamic AMOLED 2X",
+          "resolution": "QHD+ / HD+",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Snapdragon 8 Gen 3 for Galaxy",
+        "ram": "12GB",
+        "storage": "256GB / 512GB / 1TB",
+        "rear_camera": "50MP + 12MP + 10MP",
+        "front_camera": "10MP + 4MP",
+        "battery": "4400mAh",
+        "charging": "45W wired",
+        "weight": "253g",
+        "os": "Android 14"
+      }
+    },
+    {
+      "id": "galaxy-a55",
+      "name": "Samsung Galaxy A55",
+      "release_year": 2024,
+      "category": "Mid-Range",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Glass",
+        "protection": "Gorilla Glass Victus",
+        "water_resistance": "IP67"
+      },
+      "specs": {
+        "display": {
+          "size": "6.6 inch",
+          "type": "Super AMOLED",
+          "resolution": "FHD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "Exynos 1480",
+        "ram": "8GB",
+        "storage": "128GB / 256GB",
+        "rear_camera": "50MP + 12MP + 5MP",
+        "front_camera": "32MP",
+        "battery": "5000mAh",
+        "charging": "25W wired",
+        "weight": "213g",
+        "os": "Android 14"
+      }
+    }
+  ]
+}

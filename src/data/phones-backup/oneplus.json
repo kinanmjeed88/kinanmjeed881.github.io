@@ -1,0 +1,93 @@
+{
+  "brand": "OnePlus",
+  "country": "China",
+  "phones": [
+    {
+      "id": "oneplus-15",
+      "name": "OnePlus 15",
+      "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Glass / Wood Texture",
+        "protection": "Gorilla Glass Victus 2",
+        "water_resistance": "IP69"
+      },
+      "specs": {
+        "display": {
+          "size": "6.82 inch",
+          "type": "BOE X2 OLED",
+          "resolution": "2K",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Snapdragon 8 Elite",
+        "ram": "16GB / 24GB",
+        "storage": "512GB / 1TB",
+        "rear_camera": "50MP (LYT-900) + 50MP (UW) + 50MP (Tele)",
+        "front_camera": "32MP",
+        "battery": "6000mAh",
+        "charging": "100W wired / 50W wireless",
+        "weight": "218g",
+        "os": "OxygenOS 15"
+      }
+    },
+    {
+      "id": "oneplus-15r",
+      "name": "OnePlus 15R",
+      "release_year": 2025,
+      "category": "Flagship Killer",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Glass",
+        "protection": "Gorilla Glass 5",
+        "water_resistance": "IP64"
+      },
+      "specs": {
+        "display": {
+          "size": "6.78 inch",
+          "type": "AMOLED",
+          "resolution": "1.5K",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "Snapdragon 8 Gen 3 / 8s Gen 3",
+        "ram": "12GB / 16GB",
+        "storage": "256GB",
+        "rear_camera": "50MP + 8MP + 2MP",
+        "front_camera": "16MP",
+        "battery": "5500mAh",
+        "charging": "100W wired",
+        "weight": "207g",
+        "os": "OxygenOS 15"
+      }
+    },
+    {
+      "id": "oneplus-ace-6t",
+      "name": "OnePlus Ace 6T",
+      "release_year": 2025,
+      "category": "Performance",
+      "manufacturing": {
+        "frame": "Plastic",
+        "back": "Glass",
+        "protection": "Glass",
+        "water_resistance": "IP65"
+      },
+      "specs": {
+        "display": {
+          "size": "6.74 inch",
+          "type": "OLED Flat",
+          "resolution": "1.5K",
+          "refresh_rate": "144Hz"
+        },
+        "chipset": "Snapdragon 8 Gen 4 (Underclocked)",
+        "ram": "16GB",
+        "storage": "512GB",
+        "rear_camera": "50MP + 8MP",
+        "front_camera": "16MP",
+        "battery": "6500mAh",
+        "charging": "100W wired",
+        "weight": "210g",
+        "os": "ColorOS 15 (China) / OxygenOS 15"
+      }
+    }
+  ]
+}

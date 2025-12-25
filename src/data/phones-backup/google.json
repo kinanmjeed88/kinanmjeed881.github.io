@@ -1,0 +1,234 @@
+{
+  "brand": "Google",
+  "country": "USA",
+  "phones": [
+    {
+      "id": "pixel-10-pro-xl",
+      "name": "Google Pixel 10 Pro XL",
+      "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Polished Aluminum",
+        "back": "Matte Glass",
+        "protection": "Gorilla Glass Victus 3",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.8 inch",
+          "type": "LTPO OLED",
+          "resolution": "QHD+",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Google Tensor G5 (TSMC)",
+        "ram": "16GB",
+        "storage": "256GB / 512GB / 1TB",
+        "rear_camera": "50MP (Main) + 48MP (UW) + 48MP (5x Tele)",
+        "front_camera": "42MP",
+        "battery": "5100mAh",
+        "charging": "45W wired / 23W wireless",
+        "weight": "221g",
+        "os": "Android 16"
+      }
+    },
+    {
+      "id": "pixel-10-pro",
+      "name": "Google Pixel 10 Pro",
+      "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Polished Aluminum",
+        "back": "Matte Glass",
+        "protection": "Gorilla Glass Victus 3",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.3 inch",
+          "type": "LTPO OLED",
+          "resolution": "1280 x 2856",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Google Tensor G5",
+        "ram": "16GB",
+        "storage": "128GB / 256GB / 512GB",
+        "rear_camera": "50MP + 48MP + 48MP",
+        "front_camera": "42MP",
+        "battery": "4700mAh",
+        "charging": "30W wired",
+        "weight": "199g",
+        "os": "Android 16"
+      }
+    },
+    {
+      "id": "pixel-10-pro-fold",
+      "name": "Google Pixel 10 Pro Fold",
+      "release_year": 2025,
+      "category": "Foldable",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Gorilla Glass Victus 3",
+        "protection": "Gorilla Glass Victus 3",
+        "water_resistance": "IPX8"
+      },
+      "specs": {
+        "display": {
+          "main": "8.0 inch LTPO OLED 120Hz",
+          "cover": "6.3 inch OLED 120Hz"
+        },
+        "chipset": "Google Tensor G5",
+        "ram": "16GB",
+        "storage": "256GB / 512GB",
+        "rear_camera": "48MP + 12MP + 10.8MP",
+        "front_camera": "10MP",
+        "battery": "4800mAh",
+        "charging": "30W wired",
+        "weight": "250g",
+        "os": "Android 16"
+      }
+    },
+    {
+      "id": "pixel-10",
+      "name": "Google Pixel 10",
+      "release_year": 2025,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Satin Aluminum",
+        "back": "Polished Glass",
+        "protection": "Gorilla Glass Victus 2",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.2 inch",
+          "type": "Actua OLED",
+          "resolution": "FHD+",
+          "refresh_rate": "120Hz"
+        },
+        "chipset": "Google Tensor G5",
+        "ram": "12GB",
+        "storage": "128GB / 256GB",
+        "rear_camera": "50MP + 48MP",
+        "front_camera": "12MP",
+        "battery": "4600mAh",
+        "charging": "30W wired",
+        "weight": "190g",
+        "os": "Android 16"
+      }
+    },
+    {
+      "id": "pixel-9-pro-xl",
+      "name": "Google Pixel 9 Pro XL",
+      "release_year": 2024,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Polished metal",
+        "back": "Silky matte glass",
+        "protection": "Gorilla Glass Victus 2",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.8 inch",
+          "type": "Super Actua OLED",
+          "resolution": "1344 x 2992",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Google Tensor G4",
+        "ram": "16GB",
+        "storage": "128GB / 256GB / 512GB / 1TB",
+        "rear_camera": "50MP (Main) + 48MP (UW) + 48MP (5x Tele)",
+        "front_camera": "42MP",
+        "battery": "5060mAh",
+        "charging": "37W wired",
+        "weight": "221g",
+        "os": "Android 14/15"
+      }
+    },
+    {
+      "id": "pixel-9-pro",
+      "name": "Google Pixel 9 Pro",
+      "release_year": 2024,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Polished metal",
+        "back": "Matte glass",
+        "protection": "Gorilla Glass Victus 2",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.3 inch",
+          "type": "Super Actua OLED",
+          "resolution": "1280 x 2856",
+          "refresh_rate": "1–120Hz"
+        },
+        "chipset": "Google Tensor G4",
+        "ram": "16GB",
+        "storage": "128GB / 256GB / 512GB",
+        "rear_camera": "50MP + 48MP + 48MP",
+        "front_camera": "42MP",
+        "battery": "4700mAh",
+        "charging": "27W wired",
+        "weight": "199g",
+        "os": "Android 14/15"
+      }
+    },
+    {
+      "id": "pixel-9",
+      "name": "Google Pixel 9",
+      "release_year": 2024,
+      "category": "Flagship",
+      "manufacturing": {
+        "frame": "Satin metal",
+        "back": "Polished glass",
+        "protection": "Gorilla Glass Victus 2",
+        "water_resistance": "IP68"
+      },
+      "specs": {
+        "display": {
+          "size": "6.3 inch",
+          "type": "Actua OLED",
+          "resolution": "1080 x 2424",
+          "refresh_rate": "60–120Hz"
+        },
+        "chipset": "Google Tensor G4",
+        "ram": "12GB",
+        "storage": "128GB / 256GB",
+        "rear_camera": "50MP + 48MP (UW)",
+        "front_camera": "10.5MP",
+        "battery": "4700mAh",
+        "charging": "27W wired",
+        "weight": "198g",
+        "os": "Android 14/15"
+      }
+    },
+    {
+      "id": "pixel-9-pro-fold",
+      "name": "Google Pixel 9 Pro Fold",
+      "release_year": 2024,
+      "category": "Foldable",
+      "manufacturing": {
+        "frame": "Aluminum",
+        "back": "Matte glass",
+        "protection": "Gorilla Glass Victus 2",
+        "water_resistance": "IPX8"
+      },
+      "specs": {
+        "display": {
+          "main": "8.0 inch Super Actua Flex OLED",
+          "cover": "6.3 inch Actua OLED"
+        },
+        "chipset": "Google Tensor G4",
+        "ram": "16GB",
+        "storage": "256GB / 512GB",
+        "rear_camera": "48MP + 10.5MP (UW) + 10.8MP (5x Tele)",
+        "front_camera": "10MP",
+        "battery": "4650mAh",
+        "charging": "21W wired",
+        "weight": "257g",
+        "os": "Android 14/15"
+      }
+    }
+  ]
+}
