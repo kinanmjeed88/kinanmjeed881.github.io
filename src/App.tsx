@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import { telegramChannels, footerData, profileConfig, socialLinks } from './data/content';
-import { articlesData } from './data/articles'; // Import articles data
+import { articlesData } from './data/articles';
 import { ChannelCard } from './components/ChannelCard';
 import { SocialLinks } from './components/SocialLinks';
 import { 
@@ -15,9 +15,9 @@ import {
   Sparkles, Bot, ListPlus
 } from 'lucide-react';
 import { TelegramIcon } from './components/Icons'; 
-import { PhoneComparisonResult, PhoneNewsItem, StatsResult, BrandFile, LocalPhone, AITool, ArticleItem } from './types';
+import { PhoneComparisonResult, PhoneNewsItem, StatsResult, BrandFile, LocalPhone, AITool, ArticleItem, BeforeInstallPromptEvent } from './types';
 
-// Importing Local Data - Using relative paths
+// Importing Local Data
 import samsungData from './data/phones-backup/samsung.json';
 import appleData from './data/phones-backup/apple.json';
 import googleData from './data/phones-backup/google.json';
@@ -31,7 +31,7 @@ import sonyData from './data/phones-backup/sony.json';
 import tecnoData from './data/phones-backup/tecno.json'; 
 import infinixData from './data/phones-backup/infinix.json';
 
-// Import AI Tools Data directly to avoid fetch/404 issues on GitHub Pages
+// Import AI Tools Data directly
 import aiToolsData from './data/ai-tools.json';
 
 type TabType = 'home' | 'info' | 'tools';
@@ -219,7 +219,7 @@ const App: React.FC = () => {
   const [articleAiData, setArticleAiData] = useState<{type: 'summary' | 'details', text: string} | null>(null);
   const [articleAiLoading, setArticleAiLoading] = useState(false);
 
-  const [installPrompt, setInstallPrompt] = useState<any>(null);
+  const [installPrompt, setInstallPrompt] = useState<BeforeInstallPromptEvent | null>(null);
   const [showInstallBanner, setShowInstallBanner] = useState(false);
 
   const localPhonesDB = useMemo(() => getAllLocalPhones(), []);
@@ -259,9 +259,9 @@ const App: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    const handler = (e: any) => {
+    const handler = (e: Event) => {
       e.preventDefault();
-      setInstallPrompt(e);
+      setInstallPrompt(e as BeforeInstallPromptEvent);
       setShowInstallBanner(true);
     };
     window.addEventListener('beforeinstallprompt', handler);
@@ -294,7 +294,7 @@ const App: React.FC = () => {
   };
 
   const callGroqAPI = async (userContent: string, systemInstruction: string) => {
-    const apiKey = (import.meta as any).env.VITE_GROQ_API_KEY; 
+    const apiKey = import.meta.env.VITE_GROQ_API_KEY; 
     if (!apiKey) throw new Error("مفتاح API غير متوفر (VITE_GROQ_API_KEY).");
 
     try {
