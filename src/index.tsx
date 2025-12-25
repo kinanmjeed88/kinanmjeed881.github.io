@@ -11,7 +11,7 @@ if (!rootElement) {
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     // 🟢 استخدام مسار نسبي (.) ليعمل مع النطاق الفرعي في GitHub Pages
-    // هذا يحل مشكلة 404 sw.js
+    // هذا يحل مشكلة 404 sw.js ويسمح للمتصفح بإيجاد الملف
     navigator.serviceWorker.register('./sw.js')
       .then(registration => {
         console.log('SW registered: ', registration);
