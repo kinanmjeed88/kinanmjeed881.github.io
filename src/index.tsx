@@ -10,7 +10,7 @@ if (!rootElement) {
 // Service Worker Registration for PWA
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    // 🟢 استخدام مسار نسبي ليقبل Vite Base Path تلقائياً
+    // 🟢 استخدام مسار نسبي (.) ليعمل مع النطاق الفرعي في GitHub Pages
     navigator.serviceWorker.register('./sw.js')
       .then(registration => {
         console.log('SW registered: ', registration);
@@ -35,7 +35,7 @@ const removeSplashScreen = () => {
     splash.style.opacity = '0';
     setTimeout(() => {
       splash.remove();
-    }, 500);
+    }, 500); // Wait for transition
   }
 };
 

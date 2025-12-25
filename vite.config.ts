@@ -4,6 +4,7 @@ import { fileURLToPath, URL } from 'url';
 
 export default defineConfig({
   plugins: [react()],
+  // 🟢 المسار الأساسي (Base Path) لـ GitHub Pages Project Site
   base: '/kinanmjeed881.github.io/',
   resolve: {
     alias: {

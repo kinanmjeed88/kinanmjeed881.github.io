@@ -11,11 +11,20 @@
       gtag('js', new Date());
       gtag('config', 'G-16DQ6EDC0Z');
     </script>
+    
+    <!-- PWA Primary Meta Tags -->
     <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="theme-color" content="#0f172a" />
     <meta name="description" content="TechTouch Links and Channels" />
     
+    <!-- iOS Specific Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="TechTouch">
+    <link rel="apple-touch-icon" href="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
+
+    <!-- Manifest -->
     <link rel="manifest" href="/kinanmjeed881.github.io/manifest.json" />
     
     <title>TechTouch | كنان الصائغ</title>
@@ -73,6 +82,8 @@
       ::-webkit-scrollbar { width: 4px; }
       ::-webkit-scrollbar-track { background: #0f172a; }
       ::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+      
+      /* Enhanced Splash Screen */
       #splash-screen {
         position: fixed;
         inset: 0;
@@ -81,7 +92,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        z-index: 9999;
+        z-index: 99999;
         transition: opacity 0.5s ease-out, visibility 0.5s;
       }
       .loader-ring {
@@ -92,6 +103,7 @@
         border-radius: 50%;
         border-top-color: transparent;
         animation: spin 1s linear infinite;
+        filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.5));
       }
       @keyframes spin { to { transform: rotate(360deg); } }
     </style>
@@ -110,12 +122,16 @@
 </script>
 </head>
   <body>
+    <!-- Splash Screen -->
     <div id="splash-screen">
       <div class="loader-ring"></div>
-      <p style="margin-top: 20px; font-family: 'Cairo', sans-serif; font-weight: 700; color: #38bdf8;">Techtouch Hub</p>
+      <p style="margin-top: 24px; font-family: 'Cairo', sans-serif; font-weight: 800; color: #ffffff; letter-spacing: 1px;">TechTouch Hub</p>
+      <p style="margin-top: 8px; font-family: 'Cairo', sans-serif; font-size: 12px; color: #38bdf8; opacity: 0.8;">جارٍ التحميل...</p>
     </div>
 
     <div id="root"></div>
+    
+    <!-- Production Script Injection -->
     <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>
