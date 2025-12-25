@@ -1,7 +1,33 @@
-
 # TechTouch Hub
 
 بوابة TechTouch الرسمية لقنوات Telegram والتطبيقات والألعاب ووسائل التواصل الاجتماعي.
+
+## ⚠️ دليل النشر (Deployment Guidelines)
+
+**هام جداً:** هذا المشروع يتم نشره على GitHub Pages كـ **Project Site**. لضمان عمل الموقع بدون أخطاء 404 أو شاشة تحميل معلقة، يجب الالتزام بالقواعد التالية:
+
+1.  **Vite Config (`vite.config.ts`):**
+    يجب أن تكون قيمة `base` مطابقة تماماً لاسم المستودع:
+    ```typescript
+    base: '/kinanmjeed881.github.io/',
+    ```
+
+2.  **Manifest (`public/manifest.json`):**
+    يجب أن يكون `start_url` نسبياً:
+    ```json
+    "start_url": "./",
+    ```
+
+3.  **الصور والروابط:**
+    عند الإشارة إلى ملفات في مجلد `public`، يفضل استخدام المسار الكامل أو النسبي الصحيح في `index.html`:
+    ```html
+    <link rel="manifest" href="/kinanmjeed881.github.io/manifest.json" />
+    ```
+
+4.  **Import Maps:**
+    لا تستخدم `importmap` في `index.html` لأنها تتعارض مع عملية البناء الخاصة بـ Vite وتسبب مشاكل في التحميل.
+
+---
 
 ## 📁 إدارة المحتوى
 
