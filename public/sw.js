@@ -1,19 +1,13 @@
 
-const CACHE_NAME = 'techtouch-v1';
-// تمت إزالة './' من هنا لأنها تسبب خطأ "Request failed" في بعض الاستضافات أثناء التثبيت
-// سيتم التعامل مع الصفحة الرئيسية من خلال المنطق الموجود في الأسفل (Fetch Event)
-const STATIC_ASSETS = [
-  './index.html',
-  './manifest.json'
-];
+const CACHE_NAME = 'techtouch-v2'; // تم تحديث الإصدار لإجبار المتصفح على التحديث
 
-// Install Event: Cache critical static assets
+// Install Event:
+// تركنا هذه القائمة فارغة عمداً لمنع خطأ "Request failed" أثناء التثبيت.
+// سيقوم الموقع بتخزين الملفات تلقائياً عند زيارتها (Runtime Caching).
 self.addEventListener('install', (event) => {
   self.skipWaiting();
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(STATIC_ASSETS);
-    })
+    caches.open(CACHE_NAME)
   );
 });
 
@@ -33,41 +27,42 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-// Fetch Event: Network first, fall back to cache
+// Fetch Event: Smart Caching Strategy
 self.addEventListener('fetch', (event) => {
   // Only handle http/https requests
   if (!event.request.url.startsWith('http')) return;
 
+  // استراتيجية: الشبكة أولاً، ثم الكاش (Network First, falling back to Cache)
+  // هذه الاستراتيجية تضمن حصول المستخدم على أحدث محتوى، وتخزينه للمرات القادمة
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      // Return cached response if available
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-
-      // Otherwise fetch from network
-      return fetch(event.request).then((networkResponse) => {
-        // Don't cache if response is not valid
+    fetch(event.request)
+      .then((networkResponse) => {
+        // تأكد أن الاستجابة صحيحة
         if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
           return networkResponse;
         }
 
-        // Cache JS, CSS, and Images dynamically
+        // نسخ الاستجابة لتخزينها في الكاش
         const responseToCache = networkResponse.clone();
-        if (event.request.url.match(/\.(js|css|png|jpg|jpeg|svg|json)$/)) {
-            caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, responseToCache);
-            });
-        }
+        
+        caches.open(CACHE_NAME).then((cache) => {
+          cache.put(event.request, responseToCache);
+        });
 
         return networkResponse;
-      }).catch(() => {
-        // Offline fallback for navigation requests
-        // إذا انقطع النت وحاول المستخدم فتح الموقع، نعطيه index.html المحفوظ
-        if (event.request.mode === 'navigate') {
-          return caches.match('./index.html');
-        }
-      });
-    })
+      })
+      .catch(() => {
+        // إذا فشل الاتصال بالشبكة (Offline)، ابحث في الكاش
+        return caches.match(event.request).then((cachedResponse) => {
+          if (cachedResponse) {
+            return cachedResponse;
+          }
+          
+          // إذا كان الطلب لصفحة html (تصفح) وغير موجودة في الكاش، ارجع للصفحة الرئيسية
+          if (event.request.mode === 'navigate') {
+            return caches.match('./index.html');
+          }
+        });
+      })
   );
 });
