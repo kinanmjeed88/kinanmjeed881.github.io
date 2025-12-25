@@ -1,5 +1,6 @@
 
 const CACHE_NAME = 'techtouch-v1';
+// 🟢 استخدام مسارات نسبية (.) بدلاً من المطلقة (/) ليعمل الكاش داخل المجلد الفرعي
 const STATIC_ASSETS = [
   './',
   './index.html',
