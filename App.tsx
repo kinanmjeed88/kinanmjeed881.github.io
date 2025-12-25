@@ -12,7 +12,7 @@ import {
   BarChart3, PieChart,
   LayoutGrid, Copy, Facebook, Instagram, ExternalLink,
   RotateCcw, Eye, Command, AlertTriangle, BookOpen, Share2,
-  Sparkles, FileSearch, Bot, ListPlus
+  Sparkles, Bot, ListPlus
 } from 'lucide-react';
 import { TelegramIcon } from './components/Icons'; 
 import { PhoneComparisonResult, PhoneNewsItem, StatsResult, BrandFile, LocalPhone, AITool, ArticleItem } from './types';
@@ -1275,7 +1275,7 @@ const App: React.FC = () => {
                              ))
                           ) : (
                             <div className="text-center py-8 text-slate-500">
-                                <p>لم يتم العثور على مقالات تطابق بحثك.</p>
+                               <p>لم يتم العثور على مقالات تطابق بحثك.</p>
                             </div>
                           )}
                        </div>
