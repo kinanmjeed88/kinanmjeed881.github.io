@@ -63,6 +63,871 @@
       ],
       "free_note": "يوجد استخدام مجاني يومي محدود.",
       "official_url": "https://claude.ai"
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi",
+      "category": "Conversational AI",
+      "country": "China",
+      "company": "Moonshot AI",
+      "description": [
+        "مساعد ذكاء اصطناعي للمحادثة وفهم النصوص.",
+        "يدعم مستندات طويلة وتحليلها.",
+        "شائع في السوق الصيني.",
+        "مناسب للطلاب والمحترفين.",
+        "يتميز بسرعة الاستجابة."
+      ],
+      "free_note": "يتوفر استخدام مجاني.",
+      "official_url": "https://kimi.moonshot.cn"
+    },
+    {
+      "id": "manus",
+      "name": "Manus",
+      "category": "Productivity",
+      "country": "Global",
+      "company": "Manus",
+      "description": [
+        "أداة إنتاجية مدعومة بالذكاء الاصطناعي.",
+        "تساعد في تنظيم العمل.",
+        "مناسبة للفرق.",
+        "تتكامل مع أدوات أخرى.",
+        "تركز على تبسيط المهام."
+      ],
+      "official_url": "https://manus.ai"
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "category": "Conversational AI",
+      "country": "USA",
+      "company": "xAI",
+      "description": [
+        "مساعد محادثة ذكي.",
+        "مدمج مع منصة X.",
+        "يقدم إجابات آنية.",
+        "مناسب لمتابعة الأخبار.",
+        "يعتمد على نماذج xAI."
+      ],
+      "official_url": "https://x.ai"
+    },
+    {
+      "id": "copilot",
+      "name": "Microsoft Copilot",
+      "category": "Productivity",
+      "country": "USA",
+      "company": "Microsoft",
+      "description": [
+        "مساعد ذكي مدمج في نظام Windows.",
+        "يستخدم GPT-4 مجاناً للبحث والإنشاء.",
+        "ينشئ الصور عبر DALL-E 3.",
+        "مدمج مع Office 365.",
+        "مناسب للأعمال والطلاب."
+      ],
+      "free_note": "مجاني بالكامل للاستخدام الأساسي.",
+      "official_url": "https://copilot.microsoft.com"
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "category": "Image Generation",
+      "country": "USA",
+      "company": "Midjourney",
+      "description": [
+        "أداة لتوليد الصور الأكثر فنية وواقعية.",
+        "تعتمد على الأوامر النصية الدقيقة.",
+        "تعمل بشكل أساسي عبر Discord.",
+        "مناسبة للمصممين والفنانين المحترفين.",
+        "جودة تفاصيل مذهلة."
+      ],
+      "official_url": "https://www.midjourney.com"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "category": "Search Engine",
+      "country": "USA",
+      "company": "Perplexity AI",
+      "description": [
+        "محرك بحث يعتمد على الإجابات المباشرة.",
+        "يقدم المصادر الدقيقة لكل معلومة.",
+        "بديل قوي لمحركات البحث التقليدية.",
+        "يدعم وضع البحث الأكاديمي.",
+        "يستخدم نماذج متعددة (GPT, Claude)."
+      ],
+      "free_note": "يتوفر بحث مجاني غير محدود.",
+      "official_url": "https://www.perplexity.ai"
+    },
+    {
+      "id": "canva-ai",
+      "name": "Canva Magic Studio",
+      "category": "Design",
+      "country": "Australia",
+      "company": "Canva",
+      "description": [
+        "أدوات تصميم سحرية للمبتدئين.",
+        "توليد صور، تحرير الفيديوهات، وكتابة المحتوى.",
+        "إزالة الخلفيات وتغيير حجم الصور بذكاء.",
+        "مناسبة للتسويق والسوشيال ميديا.",
+        "واجهة سهلة جداً."
+      ],
+      "free_note": "أدوات مجانية مع ميزات Pro مدفوعة.",
+      "official_url": "https://www.canva.com"
+    },
+    {
+      "id": "sora",
+      "name": "Sora",
+      "category": "Video Generation",
+      "country": "USA",
+      "company": "OpenAI",
+      "description": [
+        "نموذج ثوري لتحويل النص إلى فيديو.",
+        "يولد مشاهد واقعية تصل لدقيقة كاملة.",
+        "يفهم الفيزياء وحركة الكاميرا.",
+        "قيد التجربة (Red Teaming).",
+        "يغير قواعد صناعة السينما."
+      ],
+      "official_url": "https://openai.com/sora"
+    },
+    {
+      "id": "veo",
+      "name": "Veo",
+      "category": "Video Generation",
+      "country": "USA",
+      "company": "Google",
+      "description": [
+        "منصة لتوليد الفيديو عالي الجودة.",
+        "تفهم الأوامر السينمائية.",
+        "منافس قوي في المجال.",
+        "مناسبة لصناع المحتوى.",
+        "مدعومة بتقنيات Google."
+      ],
+      "official_url": "https://deepmind.google"
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "category": "Video Generation",
+      "country": "USA",
+      "company": "Runway",
+      "description": [
+        "منصة لتوليد وتحرير الفيديو.",
+        "تعتمد على الذكاء الاصطناعي.",
+        "مستخدمة في الإبداع.",
+        "مناسبة لصناع المحتوى.",
+        "تدعم أدوات متقدمة."
+      ],
+      "official_url": "https://runwayml.com"
+    },
+    {
+      "id": "pika",
+      "name": "Pika",
+      "category": "Video Generation",
+      "country": "USA",
+      "company": "Pika Labs",
+      "description": [
+        "أداة لتوليد الفيديو من النص.",
+        "سريعة وسهلة الاستخدام.",
+        "شائعة على وسائل التواصل.",
+        "مناسبة للمبدعين.",
+        "تركز على الفيديو القصير."
+      ],
+      "official_url": "https://pika.art"
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral",
+      "category": "Open Source Models",
+      "country": "Europe",
+      "company": "Mistral AI",
+      "description": [
+        "نماذج لغوية عالية الكفاءة.",
+        "مفتوحة المصدر.",
+        "مستخدمة في البحث.",
+        "مناسبة للمطورين.",
+        "تشتهر بالخفة والأداء."
+      ],
+      "free_note": "مفتوحة المصدر.",
+      "official_url": "https://mistral.ai"
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "category": "Audio & Voice",
+      "country": "USA",
+      "company": "ElevenLabs",
+      "description": [
+        "أداة لتوليد الأصوات بالذكاء الاصطناعي.",
+        "تحاكي أصوات بشرية واقعية.",
+        "مستخدمة في السرد الصوتي.",
+        "مناسبة للمبدعين.",
+        "تدعم لغات متعددة."
+      ],
+      "free_note": "يتوفر استخدام مجاني محدود.",
+      "official_url": "https://elevenlabs.io"
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "category": "Open Source",
+      "country": "USA/France",
+      "company": "Hugging Face",
+      "description": [
+        "منصة مجتمع الذكاء الاصطناعي المفتوح.",
+        "استضافة آلاف النماذج والبيانات.",
+        "تشغيل النماذج وتجربتها مجاناً.",
+        "مركز المطورين والباحثين.",
+        "أساسية لأي مطور AI."
+      ],
+      "free_note": "مفتوحة المصدر ومجانية بالكامل.",
+      "official_url": "https://huggingface.co"
+    },
+    {
+      "id": "stable-diffusion",
+      "name": "Stable Diffusion",
+      "category": "Image Generation",
+      "country": "UK",
+      "company": "Stability AI",
+      "description": [
+        "النموذج المفتوح الأقوى للصور.",
+        "يمكن تشغيله محلياً على جهازك.",
+        "قابلية للتعديل والتدريب (LoRA).",
+        "مجتمع ضخم من الإضافات.",
+        "حرية كاملة في التوليد."
+      ],
+      "free_note": "مجاني ومفتوح المصدر.",
+      "official_url": "https://stability.ai"
+    },
+    {
+      "id": "notion-ai",
+      "name": "Notion AI",
+      "category": "Productivity",
+      "country": "USA",
+      "company": "Notion",
+      "description": [
+        "مساعد ذكي مدمج في مساحة العمل.",
+        "تلخيص الاجتماعات وكتابة المسودات.",
+        "تنظيم الجداول والبيانات تلقائياً.",
+        "تحسين أسلوب الكتابة.",
+        "بحث ذكي داخل ملفاتك."
+      ],
+      "official_url": "https://www.notion.so/product/ai"
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "category": "Coding",
+      "country": "USA",
+      "company": "GitHub (Microsoft)",
+      "description": [
+        "المبرمج المساعد الأكثر شهرة.",
+        "اقتراح أكواد كاملة أثناء الكتابة.",
+        "شرح الكود واكتشاف الأخطاء.",
+        "مدمج في VS Code.",
+        "يعتمد على OpenAI Codex."
+      ],
+      "free_note": "مجاني للطلاب والمشاريع المفتوحة.",
+      "official_url": "https://github.com/features/copilot"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "category": "Coding Assistants",
+      "country": "USA",
+      "company": "Cursor",
+      "description": [
+        "محرر أكواد مدعوم بالذكاء الاصطناعي.",
+        "يساعد في كتابة الكود.",
+        "يدعم مشاريع كاملة.",
+        "مناسب للمطورين.",
+        "سريع وخفيف."
+      ],
+      "official_url": "https://cursor.sh"
+    },
+    {
+      "id": "leonardo",
+      "name": "Leonardo.ai",
+      "category": "Image Generation",
+      "country": "Australia",
+      "company": "Leonardo.ai",
+      "description": [
+        "منصة شاملة لتوليد أصول الألعاب والصور.",
+        "واجهة مستخدم ممتازة وسهلة.",
+        "أدوات لتعديل الصور والرسم.",
+        "نماذج مخصصة لأنماط محددة.",
+        "بديل قوي لـ Midjourney."
+      ],
+      "free_note": "نظام عملات يومي مجاني.",
+      "official_url": "https://leonardo.ai"
+    },
+    {
+      "id": "suno",
+      "name": "Suno",
+      "category": "Music Generation",
+      "country": "USA",
+      "company": "Suno",
+      "description": [
+        "توليد أغاني كاملة مع كلمات وغناء.",
+        "جودة موسيقية احترافية.",
+        "يدعم اللغة العربية وأنماط متعددة.",
+        "سهل الاستخدام جداً.",
+        "ينشئ ألبومات كاملة."
+      ],
+      "free_note": "رصيد يومي مجاني للأغاني.",
+      "official_url": "https://suno.com"
+    },
+    {
+      "id": "udio",
+      "name": "Udio",
+      "category": "Music Generation",
+      "country": "USA",
+      "company": "Udio",
+      "description": [
+        "منافس Suno في توليد الموسيقى.",
+        "دقة عالية في الصوتيات والنقاء.",
+        "تحكم في مقاطع الأغنية.",
+        "مكتبة موسيقية ضخمة.",
+        "إمكانيات ريمكس وتمديد."
+      ],
+      "free_note": "توليد مجاني محدود شهرياً.",
+      "official_url": "https://www.udio.com"
+    },
+    {
+      "id": "luma",
+      "name": "Luma Dream Machine",
+      "category": "Video Generation",
+      "country": "USA",
+      "company": "Luma AI",
+      "description": [
+        "توليد فيديو عالي الجودة ومجاني.",
+        "تحويل الصور إلى فيديو متحرك.",
+        "سرعة عالية في التوليد.",
+        "واجهة ويب بسيطة.",
+        "تأثيرات حركية واقعية."
+      ],
+      "free_note": "خطة مجانية سخية جداً.",
+      "official_url": "https://lumalabs.ai/dream-machine"
+    },
+    {
+      "id": "meta-ai",
+      "name": "Meta AI",
+      "category": "Conversational AI",
+      "country": "USA",
+      "company": "Meta",
+      "description": [
+        "مساعد ذكي في واتساب وانستجرام.",
+        "توليد صور فورية أثناء المحادثة.",
+        "بحث مباشر عن المعلومات.",
+        "يعتمد على Llama 3.",
+        "متاح في تطبيقات التواصل."
+      ],
+      "free_note": "مجاني بالكامل داخل التطبيقات.",
+      "official_url": "https://www.meta.ai"
+    },
+    {
+      "id": "adobe-firefly",
+      "name": "Adobe Firefly",
+      "category": "Design",
+      "country": "USA",
+      "company": "Adobe",
+      "description": [
+        "توليد صور آمن تجارياً.",
+        "مدمج في Photoshop (Generative Fill).",
+        "تأثيرات نصية وتلوين.",
+        "احترام حقوق الملكية الفكرية.",
+        "جودة عالية للمحترفين."
+      ],
+      "free_note": "رصيد مجاني شهري عبر الويب.",
+      "official_url": "https://firefly.adobe.com"
+    },
+    {
+      "id": "jasper",
+      "name": "Jasper",
+      "category": "Writing & Marketing",
+      "country": "USA",
+      "company": "Jasper AI",
+      "description": [
+        "مخصص لكتابة المحتوى التسويقي.",
+        "قوالب جاهزة للإعلانات والمدونات.",
+        "يتوافق مع هوية العلامة التجارية.",
+        "تحسين محركات البحث (SEO).",
+        "للفرق والشركات."
+      ],
+      "official_url": "https://www.jasper.ai"
+    },
+    {
+      "id": "copyai",
+      "name": "Copy.ai",
+      "category": "Writing & Marketing",
+      "country": "USA",
+      "company": "Copy.ai",
+      "description": [
+        "أداة كتابة سريعة للنصوص القصيرة.",
+        "مثالية لمنشورات السوشيال ميديا.",
+        "توليد بريد إلكتروني ووصف منتجات.",
+        "سهلة الاستخدام للمبتدئين.",
+        "أتمتة مهام التسويق."
+      ],
+      "free_note": "خطة مجانية دائمة محدودة.",
+      "official_url": "https://www.copy.ai"
+    },
+    {
+      "id": "grammarly",
+      "name": "GrammarlyGO",
+      "category": "Writing",
+      "country": "USA",
+      "company": "Grammarly",
+      "description": [
+        "مساعد الكتابة وتصحيح الأخطاء.",
+        "إعادة صياغة الجمل وتغيير النبرة.",
+        "توليد نصوص من الصفر.",
+        "يعمل في كل مكان (المتصفح، Word).",
+        "تحسين الإنجليزية بذكاء."
+      ],
+      "free_note": "ميزات أساسية مجانية.",
+      "official_url": "https://www.grammarly.com"
+    },
+    {
+      "id": "character-ai",
+      "name": "Character.ai",
+      "category": "Entertainment",
+      "country": "USA",
+      "company": "Character.ai",
+      "description": [
+        "محادثة مع شخصيات خيالية ومشهورة.",
+        "إنشاء شخصياتك الخاصة.",
+        "تجربة ترفيهية وتفاعلية.",
+        "مجتمع ضخم من الشخصيات.",
+        "دعم المحادثة الصوتية."
+      ],
+      "free_note": "مجاني بالكامل مع خيار Plus.",
+      "official_url": "https://character.ai"
+    },
+    {
+      "id": "quillbot",
+      "name": "QuillBot",
+      "category": "Writing",
+      "country": "USA",
+      "company": "Learneo",
+      "description": [
+        "أفضل أداة لإعادة الصياغة (Paraphrasing).",
+        "تلخيص النصوص وفحص السرقة الأدبية.",
+        "تحسين القواعد والأسلوب.",
+        "مفيد جداً للطلاب والباحثين.",
+        "يدعم لغات متعددة."
+      ],
+      "free_note": "إعادة صياغة مجانية محدودة.",
+      "official_url": "https://quillbot.com"
+    },
+    {
+      "id": "poe",
+      "name": "Poe",
+      "category": "Aggregator",
+      "country": "USA",
+      "company": "Quora",
+      "description": [
+        "منصة تجمع كل البوتات في مكان واحد.",
+        "وصول لـ GPT-4, Claude, Llama.",
+        "إنشاء بوتات مخصصة.",
+        "تطبيق موبايل ممتاز.",
+        "سرعة واستقرار عالي."
+      ],
+      "free_note": "وصول مجاني للنماذج الأساسية.",
+      "official_url": "https://poe.com"
+    },
+    {
+      "id": "qwen",
+      "name": "Qwen (Tongyi Qianwen)",
+      "category": "Conversational AI",
+      "country": "China",
+      "company": "Alibaba",
+      "description": [
+        "نموذج علي بابا اللغوي الضخم.",
+        "قدرات عالية في الفهم والتحليل.",
+        "نسخ مفتوحة المصدر قوية.",
+        "تكامل مع خدمات علي بابا.",
+        "منافس قوي لـ Llama."
+      ],
+      "free_note": "نماذج مفتوحة المصدر مجانية.",
+      "official_url": "https://qwenlm.github.io"
+    },
+    {
+      "id": "ernie",
+      "name": "ERNIE Bot",
+      "category": "Conversational AI",
+      "country": "China",
+      "company": "Baidu",
+      "description": [
+        "أقوى نموذج لغوي صيني.",
+        "مدمج في محرك بحث Baidu.",
+        "توليد نصوص وصور.",
+        "فهم عميق للثقافة الآسيوية.",
+        "تطبيقات تجارية واسعة."
+      ],
+      "free_note": "نسخة أساسية مجانية.",
+      "official_url": "https://yiyan.baidu.com"
+    },
+    {
+      "id": "kling",
+      "name": "Kling AI",
+      "category": "Video Generation",
+      "country": "China",
+      "company": "Kuaishou",
+      "description": [
+        "مولد فيديو واقعي ينافس Sora.",
+        "فيديوهات طويلة بدقة 1080p.",
+        "حركة بشرية طبيعية جداً.",
+        "متاح للتجربة العالمية.",
+        "تقنية متقدمة جداً."
+      ],
+      "free_note": "نقاط مجانية يومية.",
+      "official_url": "https://klingai.com"
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma",
+      "category": "Presentation",
+      "country": "USA",
+      "company": "Gamma",
+      "description": [
+        "إنشاء عروض تقديمية (PPT) بالذكاء الاصطناعي.",
+        "تصميم مستندات ومواقع ويب جميلة.",
+        "تنسيق تلقائي وتضمين صور.",
+        "يوفر ساعات من العمل.",
+        "تفاعلي وسهل."
+      ],
+      "free_note": "رصيد مجاني عند التسجيل.",
+      "official_url": "https://gamma.app"
+    },
+    {
+      "id": "beautiful-ai",
+      "name": "Beautiful.ai",
+      "category": "Presentation",
+      "country": "USA",
+      "company": "Beautiful.ai",
+      "description": [
+        "تصميم شرائح احترافية تلقائياً.",
+        "قوالب ذكية تتكيف مع المحتوى.",
+        "للشركات والعروض الرسمية.",
+        "رسوم بيانية ومخططات ذكية.",
+        "سهولة في التعديل."
+      ],
+      "official_url": "https://www.beautiful.ai"
+    },
+    {
+      "id": "synthesia",
+      "name": "Synthesia",
+      "category": "Video Avatar",
+      "country": "UK",
+      "company": "Synthesia",
+      "description": [
+        "إنشاء فيديو بمذيعين افتراضيين (Avatars).",
+        "لا يحتاج لتصوير أو كاميرا.",
+        "يدعم 120 لغة.",
+        "للتدريب والشروحات والشركات.",
+        "واقعية حركة الشفاه."
+      ],
+      "official_url": "https://www.synthesia.io"
+    },
+    {
+      "id": "heygen",
+      "name": "HeyGen",
+      "category": "Video Avatar",
+      "country": "USA",
+      "company": "HeyGen",
+      "description": [
+        "ترجمة الفيديو مع تعديل حركة الشفاه.",
+        "إنشاء أفاتار مخصص لك.",
+        "جودة عالية جداً وواقعية.",
+        "سهولة الاستخدام.",
+        "انتشر بسبب ميزة الترجمة."
+      ],
+      "free_note": "فيديو تجريبي مجاني.",
+      "official_url": "https://www.heygen.com"
+    },
+    {
+      "id": "tome",
+      "name": "Tome",
+      "category": "Storytelling",
+      "country": "USA",
+      "company": "Tome",
+      "description": [
+        "سرد قصصي وعروض تفاعلية.",
+        "يدمج النص والصور المولدة.",
+        "تجربة قراءة مميزة على الموبايل.",
+        "للمبدعين والمسوقين.",
+        "تصميم عصري."
+      ],
+      "free_note": "مجاني للاستخدام الشخصي.",
+      "official_url": "https://tome.app"
+    },
+    {
+      "id": "replicate",
+      "name": "Replicate",
+      "category": "Developer Tools",
+      "country": "USA",
+      "company": "Replicate",
+      "description": [
+        "تشغيل نماذج AI مفتوحة المصدر عبر API.",
+        "لا حاجة لإدارة خوادم GPU.",
+        "آلاف النماذج الجاهزة (Llama, Whisper).",
+        "تسعير حسب مدة التشغيل.",
+        "للمطورين والشركات الناشئة."
+      ],
+      "free_note": "تجربة مجانية محدودة.",
+      "official_url": "https://replicate.com"
+    },
+    {
+      "id": "replit-ai",
+      "name": "Replit AI",
+      "category": "Coding Assistants",
+      "country": "USA",
+      "company": "Replit",
+      "description": [
+        "مساعد برمجي داخل Replit.",
+        "يساعد في إنشاء التطبيقات.",
+        "يدعم التعلم.",
+        "مناسب للمبتدئين.",
+        "مدمج مع المنصة."
+      ],
+      "free_note": "يتوفر استخدام مجاني.",
+      "official_url": "https://replit.com"
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier AI",
+      "category": "Automation",
+      "country": "USA",
+      "company": "Zapier",
+      "description": [
+        "أتمتة المهام بين تطبيقات AI.",
+        "ربط ChatGPT بآلاف التطبيقات.",
+        "إنشاء سير عمل ذكي.",
+        "بدون برمجة (No-Code).",
+        "زيادة الإنتاجية."
+      ],
+      "free_note": "خطة مجانية للمهام البسيطة.",
+      "official_url": "https://zapier.com"
+    },
+    {
+      "id": "otter",
+      "name": "Otter.ai",
+      "category": "Transcribing",
+      "country": "USA",
+      "company": "Otter.ai",
+      "description": [
+        "تحويل الصوت إلى نص للاجتماعات.",
+        "دخول تلقائي لاجتماعات Zoom/Teams.",
+        "تلخيص النقاط الرئيسية.",
+        "بحث داخل التسجيلات الصوتية.",
+        "دقة عالية في الإنجليزية."
+      ],
+      "free_note": "دقائق مجانية شهرياً.",
+      "official_url": "https://otter.ai"
+    },
+    {
+      "id": "whisper",
+      "name": "OpenAI Whisper",
+      "category": "Transcribing",
+      "country": "USA",
+      "company": "OpenAI",
+      "description": [
+        "أدق نموذج مفتوح المصدر للتعرف على الكلام.",
+        "يدعم لغات متعددة بطلاقة.",
+        "يمكن تشغيله محلياً.",
+        "للترجمة والتحويل النصي.",
+        "مجاني للمطورين."
+      ],
+      "free_note": "مفتوح المصدر ومجاني.",
+      "official_url": "https://openai.com/research/whisper"
+    },
+    {
+      "id": "tabnine",
+      "name": "Tabnine",
+      "category": "Coding",
+      "country": "Israel/USA",
+      "company": "Tabnine",
+      "description": [
+        "إكمال الكود بالذكاء الاصطناعي.",
+        "يعمل محلياً للحفاظ على الخصوصية.",
+        "يتعلم من كود مشروعك الخاص.",
+        "يدعم كل المحررات الشهيرة.",
+        "بديل آمن للشركات."
+      ],
+      "free_note": "خطة أساسية مجانية.",
+      "official_url": "https://www.tabnine.com"
+    },
+    {
+      "id": "codeium",
+      "name": "Codeium",
+      "category": "Coding",
+      "country": "USA",
+      "company": "Exafunction",
+      "description": [
+        "مساعد برمجي سريع ومجاني.",
+        "إكمال كود ودردشة ذكية.",
+        "يدعم أكثر من 70 لغة.",
+        "إضافات لكل المحررات.",
+        "خفيف وسريع جداً."
+      ],
+      "free_note": "مجاني بالكامل للأفراد.",
+      "official_url": "https://codeium.com"
+    },
+    {
+      "id": "phind",
+      "name": "Phind",
+      "category": "Search Engine",
+      "country": "USA",
+      "company": "Phind",
+      "description": [
+        "محرك بحث مخصص للمطورين.",
+        "إجابات برمجية مع أمثلة كود.",
+        "يحل المشاكل التقنية بسرعة.",
+        "بديل لـ Stack Overflow.",
+        "دقيق ومباشر."
+      ],
+      "free_note": "بحث مجاني غير محدود.",
+      "official_url": "https://www.phind.com"
+    },
+    {
+      "id": "consensus",
+      "name": "Consensus",
+      "category": "Research",
+      "country": "USA",
+      "company": "Consensus",
+      "description": [
+        "محرك بحث للأوراق العلمية.",
+        "يلخص النتائج من دراسات موثوقة.",
+        "إجابات مبنية على العلم فقط.",
+        "للطلاب والباحثين.",
+        "يقلل وقت البحث."
+      ],
+      "free_note": "بحث مجاني محدود.",
+      "official_url": "https://consensus.app"
+    },
+    {
+      "id": "elicit",
+      "name": "Elicit",
+      "category": "Research",
+      "country": "USA",
+      "company": "Ought",
+      "description": [
+        "مساعد بحثي لتحليل الدراسات.",
+        "استخراج البيانات من ملفات PDF.",
+        "إيجاد أوراق بحثية ذات صلة.",
+        "تنظيم المراجع.",
+        "أداة قوية للأكاديميين."
+      ],
+      "free_note": "رصيد مجاني عند التسجيل.",
+      "official_url": "https://elicit.com"
+    },
+    {
+      "id": "scispace",
+      "name": "SciSpace",
+      "category": "Research",
+      "country": "USA",
+      "company": "SciSpace",
+      "description": [
+        "شرح وتبسيط الأوراق العلمية.",
+        "محادثة مع ملفات PDF.",
+        "كتابة وتنسيق الأبحاث.",
+        "قاعدة بيانات ضخمة.",
+        "مفيد للدراسات العليا."
+      ],
+      "free_note": "ميزات مجانية جيدة.",
+      "official_url": "https://typeset.io"
+    },
+    {
+      "id": "chatpdf",
+      "name": "ChatPDF",
+      "category": "Productivity",
+      "country": "USA",
+      "company": "ChatPDF",
+      "description": [
+        "محادثة فورية مع أي ملف PDF.",
+        "تلخيص المستندات الطويلة.",
+        "استخراج المعلومات بسرعة.",
+        "لا يحتاج تسجيل دخول معقد.",
+        "سريع وبسيط."
+      ],
+      "free_note": "مجاني لعدد محدد من الصفحات.",
+      "official_url": "https://www.chatpdf.com"
+    },
+    {
+      "id": "baichuan",
+      "name": "Baichuan",
+      "category": "Open Source Models",
+      "country": "China",
+      "company": "Baichuan AI",
+      "description": [
+        "نماذج لغوية صينية متقدمة.",
+        "مفتوحة المصدر.",
+        "مستخدمة في البحث.",
+        "مناسبة للمطورين.",
+        "تدعم اللغة الصينية."
+      ],
+      "free_note": "مفتوحة المصدر.",
+      "official_url": "https://www.baichuan-ai.com"
+    },
+    {
+      "id": "tongyi",
+      "name": "Tongyi Qianwen",
+      "category": "Conversational AI",
+      "country": "China",
+      "company": "Alibaba",
+      "description": [
+        "مساعد محادثة ذكي.",
+        "مدمج مع خدمات Alibaba.",
+        "يدعم الإنتاجية.",
+        "مناسب للأعمال.",
+        "شائع في الصين."
+      ],
+      "official_url": "https://tongyi.aliyun.com"
+    },
+    {
+      "id": "sensechat",
+      "name": "SenseChat",
+      "category": "Conversational AI",
+      "country": "China",
+      "company": "SenseTime",
+      "description": [
+        "مساعد محادثة يعتمد على الرؤية.",
+        "يدعم النصوص والصور.",
+        "مستخدم في حلول الأعمال.",
+        "مناسب للشركات.",
+        "مدعوم بتقنيات SenseTime."
+      ],
+      "official_url": "https://chat.sensetime.com"
+    },
+    {
+      "id": "iflytek-voice",
+      "name": "iFlytek Voice",
+      "category": "Audio & Voice",
+      "country": "China",
+      "company": "iFlytek",
+      "description": [
+        "أدوات تحويل النص إلى صوت.",
+        "تدعم اللغة الصينية بدقة.",
+        "مستخدمة في التعليم.",
+        "مناسبة للأعمال.",
+        "تشتهر بجودة الصوت."
+      ],
+      "official_url": "https://www.iflytek.com"
+    },
+    {
+      "id": "viggle",
+      "name": "Viggle",
+      "category": "Video Generation",
+      "country": "Canada",
+      "company": "Viggle",
+      "description": [
+        "تحريك الشخصيات في الفيديو.",
+        "استبدال الشخصيات في المشاهد.",
+        "ميمز وفيديوهات مضحكة.",
+        "يعمل عبر Discord.",
+        "تحكم حركي دقيق."
+      ],
+      "free_note": "مجاني (بيتا).",
+      "official_url": "https://viggle.ai"
     }
   ]
 }
