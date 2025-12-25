@@ -1,4 +1,3 @@
-
 # TechTouch Hub
 
 بوابة TechTouch الرسمية لقنوات Telegram والتطبيقات والألعاب ووسائل التواصل الاجتماعي.
@@ -49,3 +48,71 @@
 ## 🚀 التشغيل والتطوير
 - تشغيل السيرفر المحلي: `npm run dev`
 - بناء المشروع: `npm run build`
+
+---
+
+## 🛠️ حل مشاكل النشر على GitHub Pages (Vite + React)
+
+### ❌ المشكلة الأولى
+الموقع يظهر شاشة تحميل (Spinner) فقط ولا يعمل، وفي Console يظهر الخطأ:
+```
+GET https://kinanmjeed88.github.io/src/index.tsx 404
+```
+
+### 🔍 السبب الحقيقي
+GitHub Pages لا يشغّل Vite في وضع التطوير، لكن الموقع كان يحاول تحميل ملفات من `/src/index.tsx`.
+وهذا يعني:
+- أن `index.html` ما زال يستخدم وضع التطوير.
+- أو أن `base path` غير مضبوط.
+- أو وجود `importmap` / `script` يدوي يمنع Vite من ربط ملفات الإنتاج.
+
+**📌 أي طلب `/src/*` في الإنتاج = خطأ قاتل.**
+
+### ✅ الحل الذي تم تطبيقه (المهم)
+
+#### 1️⃣ ضبط base path في Vite
+في ملف `vite.config.ts`:
+```typescript
+export default defineConfig({
+  base: '/kinanmjeed881.github.io/',
+})
+```
+مهم جدًا لأن الموقع Project Site وليس Root Site.
+
+#### 2️⃣ تنظيف index.html بالكامل
+في `index.html` تم:
+- ❌ حذف أي `importmap`.
+- ❌ حذف أي ربط يدوي بملفات `src` (يترك لـ Vite التعامل معها).
+- الإبقاء فقط على `<div id="root"></div>`.
+
+#### 3️⃣ البناء الصحيح
+تم تنفيذ:
+```bash
+npm run build
+```
+والتأكد أن مجلد `dist/` يحتوي على `index.html` و `assets/` فقط، و **لا يحتوي** على مجلد `src`.
+
+#### 4️⃣ رفع dist فقط إلى GitHub Pages
+في GitHub Actions يتم استخدام `path: ./dist`.
+
+---
+
+### ❌ المشكلة الثانية
+فشل build في GitHub Actions مع أخطاء مثل:
+```
+Cannot find module './data/phones-backup/samsung.json'
+```
+
+### 🔍 السبب
+استيراد ملفات JSON غير موجودة فعليًا، أو مسارات خاطئة بعد إعادة ترتيب الملفات، أو نُسخت الكود بدون نسخ البيانات.
+
+### ✅ الحل الذي تم تطبيقه
+- التأكد أن جميع ملفات JSON موجودة داخل `src/data/phones-backup/`.
+- إصلاح أخطاء TypeScript (مثل المتغيرات غير المستخدمة).
+
+---
+
+### 🧠 قاعدة ذهبية (مهم جدًا)
+إذا كان الموقع يعمل محليًا وتوقف على GitHub Pages:
+- 🔴 **السبب 90%:** `base path` خاطئ أو محاولة تحميل `src` في الإنتاج.
+- ✅ **الحل دائمًا:** `dist` فقط، `assets` فقط، ولا `src` في الإنتاج.
