@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from 'url';
 
 export default defineConfig({
   plugins: [react()],
-  // 🟢 هام جداً: هذا المسار يجب أن يطابق اسم المستودع لأن الموقع مشروع وليس User Site
+  // 🟢 الحل الجذري: المسار الأساسي يجب أن يطابق اسم المستودع بالضبط مع / في البداية والنهاية
   base: '/kinanmjeed881.github.io/',
   resolve: {
     alias: {
@@ -16,8 +16,6 @@ export default defineConfig({
     assetsDir: 'assets',
     minify: 'esbuild',
     sourcemap: false,
-    emptyOutDir: true,
-    // تحسين التوافقية
-    target: 'esnext'
+    emptyOutDir: true
   }
 });

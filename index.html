@@ -18,8 +18,8 @@
     <meta name="theme-color" content="#0f172a" />
     <meta name="description" content="TechTouch Links and Channels" />
     
-    <!-- Vite سيقوم تلقائياً بتحديث المسار في الإنتاج بناءً على base في التكوين -->
-    <link rel="manifest" href="/kinanmjeed881.github.io/manifest.json" />
+    <!-- 🟢 تصحيح: الرابط نسبي ليعمل مع base path -->
+    <link rel="manifest" href="manifest.json" />
     
     <title>TechTouch | كنان الصائغ</title>
     
@@ -110,6 +110,7 @@
         to { transform: rotate(360deg); }
       }
     </style>
+    <!-- تم حذف importmap نهائياً لمنع تعارض الإنتاج -->
 <script type="importmap">
 {
   "imports": {
@@ -133,7 +134,7 @@
 
     <div id="root"></div>
 
-    <!-- Main Entry Point -->
+    <!-- Main Entry Point: Vite سيقوم بتحويل هذا المسار تلقائياً في الإنتاج -->
     <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>
