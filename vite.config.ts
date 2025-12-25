@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from 'url';
 
 export default defineConfig({
   plugins: [react()],
-  // 🟢 الحل الجذري: المسار الأساسي يجب أن يطابق اسم المستودع بالضبط مع / في البداية والنهاية
+  // 🟢 المسار الأساسي الصحيح لموقع المشروع
   base: '/kinanmjeed881.github.io/',
   resolve: {
     alias: {
@@ -14,8 +14,17 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    // تحسين التوافق وتقليل حجم الملفات
+    target: 'esnext',
     minify: 'esbuild',
-    sourcemap: false,
-    emptyOutDir: true
+    // التأكد من تفريغ المجلد القديم قبل البناء
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'lucide-react']
+        }
+      }
+    }
   }
 });

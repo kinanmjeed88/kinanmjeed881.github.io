@@ -10,7 +10,8 @@ if (!rootElement) {
 // Service Worker Registration for PWA
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
+    // 🟢 استخدام مسار نسبي ليقبل Vite Base Path تلقائياً
+    navigator.serviceWorker.register('./sw.js')
       .then(registration => {
         console.log('SW registered: ', registration);
       })
