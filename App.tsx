@@ -233,15 +233,26 @@ const App: React.FC = () => {
 
   // Handle Deep Linking for Articles
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const articleId = params.get('article');
-    if (articleId) {
-      const found = articlesData.find(a => a.id === Number(articleId));
-      if (found) {
-        setActiveTab('tools');
-        setActiveToolView('articles');
-        setSelectedArticle(found);
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const articleId = params.get('article');
+      
+      if (articleId) {
+        const found = articlesData.find(a => a.id === Number(articleId));
+        if (found) {
+          setActiveTab('tools');
+          setActiveToolView('articles');
+          setSelectedArticle(found);
+        } else {
+          // If article ID exists in URL but not found in data
+          // Redirect to Articles list and show a non-intrusive error
+          setActiveTab('tools');
+          setActiveToolView('articles');
+          setError('المقال المطلوب غير موجود أو تم حذفه.');
+        }
       }
+    } catch (e) {
+      console.error("Error parsing URL params:", e);
     }
   }, []);
 
