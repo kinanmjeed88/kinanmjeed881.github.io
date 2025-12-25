@@ -18,8 +18,8 @@
     <meta name="theme-color" content="#0f172a" />
     <meta name="description" content="TechTouch Links and Channels" />
     
-    <!-- PWA Manifest Link -->
-    <link rel="manifest" href="/manifest.json" />
+    <!-- 🟢 تصحيح: الرابط نسبي ليعمل مع base path -->
+    <link rel="manifest" href="manifest.json" />
     
     <title>TechTouch | كنان الصائغ</title>
     
@@ -110,15 +110,16 @@
         to { transform: rotate(360deg); }
       }
     </style>
+    <!-- تم حذف importmap نهائياً لمنع تعارض الإنتاج -->
 <script type="importmap">
 {
   "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-    "vite": "https://esm.sh/vite@^7.3.0",
     "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://esm.sh/vite@^7.3.0",
     "url": "https://esm.sh/url@^0.11.4"
   }
 }
@@ -133,7 +134,7 @@
 
     <div id="root"></div>
 
-    <!-- Main Entry Point -->
+    <!-- Main Entry Point: Vite سيقوم بتحويل هذا المسار تلقائياً في الإنتاج -->
     <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>

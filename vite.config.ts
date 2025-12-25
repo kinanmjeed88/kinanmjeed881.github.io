@@ -4,7 +4,7 @@ import { fileURLToPath, URL } from 'url';
 
 export default defineConfig({
   plugins: [react()],
-  // Ensure this matches your GitHub repository name exactly
+  // 🟢 الحل الجذري: المسار الأساسي يجب أن يطابق اسم المستودع بالضبط مع / في البداية والنهاية
   base: '/kinanmjeed881.github.io/',
   resolve: {
     alias: {
@@ -15,6 +15,7 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     minify: 'esbuild',
-    sourcemap: false
+    sourcemap: false,
+    emptyOutDir: true
   }
 });
